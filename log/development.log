@@ -652,3 +652,45 @@ Rendering site/index
 Rendered site/_header (1.1ms)
 Rendered site/_footer (0.2ms)
 Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:55:18) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-03 22:55:21) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-03 22:56:06) [GET]
+
+ActionController::UnknownAction (No action responded to dealer. Actions: index and member):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-03 23:00:25) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 29ms (View: 26, DB: 0) | 200 OK [http://localhost/dealer]
