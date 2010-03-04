@@ -30,6 +30,12 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
 
+  # Named routes for the static site
+  map.member '/member', :controller => "site", :action => "member"
+  map.dealer '/dealer', :controller => "site", :action => "dealer"
+  map.recruiting '/recruiting', :controller => "site", :action => "recruiting"
+  map.join '/join', :controller => "site", :action => "join"
+  
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "site", :action => "index"
 
