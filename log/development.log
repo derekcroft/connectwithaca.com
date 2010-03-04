@@ -694,3 +694,53 @@ Rendering site/dealer
 Rendered site/_header (1.0ms)
 Rendered site/_footer (0.1ms)
 Completed in 29ms (View: 26, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-03 23:02:09) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-03 23:02:12) [GET]
+
+ActionController::UnknownAction (No action responded to recruiting. Actions: dealer, index, and member):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-03 23:05:54) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-03 23:06:02) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-03 23:06:03) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/recruiting]

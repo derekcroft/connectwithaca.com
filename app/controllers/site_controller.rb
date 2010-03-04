@@ -7,4 +7,7 @@ class SiteController < ApplicationController
 
   def dealer
   end
+
+  def recruiting
+  end
 end
