@@ -628,3 +628,27 @@ Rendering site/index
 Rendered site/_header (6.9ms)
 Rendered site/_footer (0.8ms)
 Completed in 52ms (View: 49, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:49:45) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:49:57) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 75ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:51:08) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/]
