@@ -1,0 +1,580 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 21:24:43) [GET]
+
+ActionController::RoutingError (No route matches "/site" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 21:24:48) [GET]
+
+ActionController::RoutingError (No route matches "/site/index" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:27:13) [GET]
+Rendering site/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:28:22) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:28:31) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/site]
+
+
+Processing SiteController#fff (for 127.0.0.1 at 2010-03-03 21:28:35) [GET]
+
+ActionController::UnknownAction (No action responded to fff. Actions: index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:28:40) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:52:16) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:52:17) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 21:52:18) [GET]
+Rendering site/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:12:55) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:12:55) [GET]
+Rendering site/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/site/index]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:13:35) [GET]
+Rendering site/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:18:57) [GET]
+Rendering template within layouts/site
+Rendering site/index
+
+ActionView::TemplateError (Missing template site/_header.erb in view path app/views) on line #15 of app/views/layouts/site.html.erb:
+12:   </tr>
+13:   <tr>
+14:     <td id="header">
+15:       <%= render :partial => "header" %>
+16:     </td>
+17:   </tr>
+18:   <tr>
+
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/layouts/site.html.erb:15
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.6ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:21:10) [GET]
+Rendering template within layouts/site
+Rendering site/index
+
+ActionView::TemplateError (Missing template site/_header.erb in view path app/views) on line #15 of app/views/layouts/site.html.erb:
+12:   </tr>
+13:   <tr>
+14:     <td id="header">
+15:       <%= render :partial => "header" %>
+16:     </td>
+17:   </tr>
+18:   <tr>
+
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/layouts/site.html.erb:15
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:21:11) [GET]
+Rendering template within layouts/site
+Rendering site/index
+
+ActionView::TemplateError (Missing template site/_header.erb in view path app/views) on line #15 of app/views/layouts/site.html.erb:
+12:   </tr>
+13:   <tr>
+14:     <td id="header">
+15:       <%= render :partial => "header" %>
+16:     </td>
+17:   </tr>
+18:   <tr>
+
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/views/layouts/site.html.erb:15
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:21:38) [GET]
+Rendering site/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:22:22) [GET]
+Rendering template within layouts/site
+Rendering site/index
+ERROR: compiling _run_haml_app47views47site47_header46html46haml_locals_header_object RAISED compile error
+/home/blueruby/aca/app/views/site/_header.html.haml:6: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:10: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:14: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:18: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:22: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+Function body:           def _run_haml_app47views47site47_header46html46haml_locals_header_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];header = local_assigns[:header];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :escape_html=>false, :encoding=>nil, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+
+
+_hamlout.push_text("<div id='logo'>\n  &nbsp;\n</div>\n<div id='globalnav'>\n  <ul class='gnav' style='border:none;'>\n    <li class='tablit'>\n", 3, false);_hamlout.open_tag("a", false, false, false, false, {"id"=>"one"}, false, false, nil, nil,  :href => "default.asp", :name => "navigation", :style => "color:#c60a27;") );
+
+
+
+_hamlout.push_text("        Home\n      </a>\n    </li>\n  </ul>\n  <ul class='gnav'>\n    <li class='tab'>\n", -1, false);_hamlout.open_tag("a", false, false, false, false, {"id"=>"two"}, false, false, nil, nil,  :href => "member.asp", :name => "navigation", :style => "color:#c60a27;") );
+
+
+
+_hamlout.push_text("        Member Center\n      </a>\n    </li>\n  </ul>\n  <ul class='gnav'>\n    <li class='tab'>\n", -1, false);_hamlout.open_tag("a", false, false, false, false, {"id"=>"three"}, false, false, nil, nil,  :href => "dealer.asp", :name => "navigation", :style => "color:#c60a27;") );
+
+
+
+_hamlout.push_text("        Dealer Direct\n      </a>\n    </li>\n  </ul>\n  <ul class='gnav'>\n    <li class='tab'>\n", -1, false);_hamlout.open_tag("a", false, false, false, false, {"id"=>"four"}, false, false, nil, nil,  :href => "recruiting.asp", :name => "navigation", :style => "color:#c60a27;") );
+
+
+
+_hamlout.push_text("        Recruiting\n      </a>\n    </li>\n  </ul>\n  <ul class='gnav'>\n    <li class='tab'>\n", -1, false);_hamlout.open_tag("a", false, false, false, false, {"id"=>"five"}, false, false, nil, nil,  :href => "join.asp", :name => "navigation", :style => "color:#c60a27;") );
+_hamlout.push_text("        Join ACA\n      </a>\n    </li>\n  </ul>\n</div>\n", -4, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/blueruby/aca/app/views/site/_header.html.haml:26:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render_without_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers.rb:96:in `non_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/blueruby/aca/app/views/layouts/site.html.haml:14:in `_run_haml_app47views47layouts47site46html46haml'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/sass/plugin/rails.rb:20:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/blueruby/aca/app/views/site/_header.html.haml:6: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:10: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:14: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:18: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^
+/home/blueruby/aca/app/views/site/_header.html.haml:22: syntax error, unexpected ')', expecting kEND
+... :style => "color:#c60a27;") );
+                              ^) on line #6 of app/views/site/_header.html.haml:
+3: #globalnav
+4:   %ul.gnav{ :style => "border:none;" }
+5:     %li.tablit
+6:       %a#one{ :href => "default.asp", :name => "navigation", :style => "color:#c60a27;") }
+7:         Home
+8:   %ul.gnav
+9:     %li.tab
+
+    app/views/site/_header.html.haml:26:in `compile!'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.20) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/site.html.haml:14:in `_run_haml_app47views47layouts47site46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:24:31) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (6.7ms)
+
+ActionView::TemplateError (undefined local variable or method `gsSSL_Site' for #<ActionView::Base:0xb6fa772c>) on line #35 of app/views/layouts/site.html.haml:
+32:                 %td
+33:                   .home_titles
+34:                     Member Center
+35:                   %a{ :href => "#{gsSSL_Site}member.asp" }
+36:                     > Member Log-In
+37:                   %br
+38:                   > Membership         Directory
+
+    app/views/layouts/site.html.haml:35:in `_run_haml_app47views47layouts47site46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:25:17) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.8ms)
+Completed in 35ms (View: 32, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 22:25:17) [GET]
+
+ActionController::RoutingError (No route matches "/css/aca_global.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 22:25:17) [GET]
+
+ActionController::RoutingError (No route matches "/js/aca_main.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:28:15) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 22:28:15) [GET]
+
+ActionController::RoutingError (No route matches "/css/aca_global.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 22:28:15) [GET]
+
+ActionController::RoutingError (No route matches "/js/aca_main.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:28:17) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 22:28:17) [GET]
+
+ActionController::RoutingError (No route matches "/css/aca_global.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-03 22:28:17) [GET]
+
+ActionController::RoutingError (No route matches "/js/aca_main.js" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:28:28) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:29:41) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-03 22:30:17) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 30ms (View: 27, DB: 0) | 200 OK [http://localhost/]

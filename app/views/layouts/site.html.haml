@@ -1,9 +1,10 @@
+!!!
 %html
   %head
+    = stylesheet_link_tag "aca_global"
+    = javascript_include_tag "aca_main"
     %title
       ACA
-    %link{ :href => "css/aca_global.css", :rel => "stylesheet", :type => "text/css" }
-    %script{ :src => "js/aca_main.js", :type => "text/javascript" }
   %body
     %center
       %table#container{ :cellspacing => "0", :cellpadding => "0" }
@@ -32,7 +33,7 @@
                 %td
                   .home_titles
                     Member Center
-                  %a{ :href => "#{gsSSL_Site}member.asp" }
+                  %a{ :href => "member.asp" }
                     > Member Log-In
                   %br
                   > Membership Directory
