@@ -744,3 +744,285 @@ Rendering site/recruiting
 Rendered site/_header (1.0ms)
 Rendered site/_footer (0.1ms)
 Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-03 23:09:09) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 33ms (View: 30, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-03 23:09:09) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.3ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-04 23:45:13) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (20.7ms)
+Rendered site/_footer (12.1ms)
+Completed in 156ms (View: 152, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 23:45:16) [GET]
+
+ActionController::RoutingError (No route matches "/member.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-04 23:47:31) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:47:34) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 51ms (View: 48, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-04 23:47:38) [GET]
+
+ActionController::RoutingError (No route matches "/member_find.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:47:41) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:47:47) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.7ms)
+Rendered site/_footer (0.2ms)
+Completed in 37ms (View: 34, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:47:51) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-04 23:47:54) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.3ms)
+Rendered site/_footer (0.1ms)
+Completed in 54ms (View: 51, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-04 23:47:59) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 50ms (View: 47, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-04 23:47:59) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.7ms)
+Rendered site/_footer (0.2ms)
+Completed in 34ms (View: 13, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-04 23:48:06) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.2ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:48:10) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:50:24) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:51:33) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-04 23:51:35) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-04 23:51:38) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-04 23:51:39) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-04 23:52:09) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-04 23:52:12) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:52:13) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:52:47) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:52:56) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-04 23:54:10) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:54:12) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:54:28) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 26ms (View: 23, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-04 23:54:40) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-04 23:54:41) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-04 23:54:41) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.2ms)
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-04 23:55:30) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 33ms (View: 30, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#join (for 127.0.0.1 at 2010-03-04 23:55:30) [GET]
+Rendering template within layouts/site
+Rendering site/join
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/join]
