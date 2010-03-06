@@ -1356,3 +1356,99 @@ Rendered site/_javascript_includes (0.3ms)
 Rendered site/_header (1.0ms)
 Rendered site/_footer (0.1ms)
 Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:09:03) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.2ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 00:09:25) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered site/_javascript_includes (0.3ms)
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 00:09:27) [GET]
+
+ActionController::RoutingError (No route matches "/member_find.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-06 00:11:59) [GET]
+Rendering template within layouts/application
+Rendering site/recruiting
+Rendered site/_javascript_includes (0.3ms)
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-06 00:12:04) [GET]
+Rendering template within layouts/application
+Rendering site/dealer
+Rendered site/_javascript_includes (0.3ms)
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 00:12:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/less_arrow.gif" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 00:16:32) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered site/_javascript_includes (0.4ms)
+Rendered site/_header (1.9ms)
+Rendered site/_footer (0.2ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 00:16:37) [GET]
+
+ActionController::RoutingError (No route matches "/member_find.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
