@@ -1478,3 +1478,1026 @@ Rendered site/_javascript_includes (0.5ms)
 Rendered site/_header (1.2ms)
 Rendered site/_footer (0.2ms)
 Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:25:42) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (1.5ms)
+Rendered site/_header (6.2ms)
+Rendered site/_footer (0.8ms)
+Completed in 55ms (View: 53, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 00:25:45) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered site/_javascript_includes (0.4ms)
+Rendered site/_header (1.0ms)
+Rendered site/_footer (66.0ms)
+Completed in 95ms (View: 92, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:25:49) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #3 of app/views/members/index.html.haml:
+1: %tr
+2:   %td#content
+3:       #member_img
+4:         #pg_title
+5:   	Member Center
+6:       %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+
+    app/views/members/index.html.haml:3
+    haml (2.2.20) lib/haml/precompiler.rb:199:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:26:17) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #5 of app/views/members/index.html.haml:
+2:   %td#content
+3:     #member_img
+4:       #pg_title
+5: 	Member Center
+6:     %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+7:       %tr
+8: 	%td#menu_area
+
+    app/views/members/index.html.haml:5
+    haml (2.2.20) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.20) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.20) lib/haml/precompiler.rb:824:in `render_div'
+    haml (2.2.20) lib/haml/precompiler.rb:231:in `process_line'
+    haml (2.2.20) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:26:38) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.) on line #8 of app/views/members/index.html.haml:
+5:         Member Center
+6:     %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+7:       %tr
+8: 	%td#menu_area
+9: 	  /
+10: 	    SIDE MENU //
+11: 	  #sidebar
+
+    app/views/members/index.html.haml:8
+    haml (2.2.20) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.20) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.20) lib/haml/precompiler.rb:232:in `process_line'
+    haml (2.2.20) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:27:18) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (Inconsistent indentation: "\t  " was used for indentation, but the rest of the document was indented using 2 spaces.) on line #9 of app/views/members/index.html.haml:
+6:     %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+7:       %tr
+8:         %td#menu_area
+9: 	  #sidebar
+10: 	    %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
+11: 	      \&nbsp;
+12: 	%td{ :valign => "top" }
+
+    app/views/members/index.html.haml:9
+    haml (2.2.20) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.20) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.20) lib/haml/precompiler.rb:232:in `process_line'
+    haml (2.2.20) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:27:33) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (Inconsistent indentation: "\t    " was used for indentation, but the rest of the document was indented using 2 spaces.) on line #10 of app/views/members/index.html.haml:
+7:       %tr
+8:         %td#menu_area
+9:           #sidebar
+10: 	    %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
+11: 	      \&nbsp;
+12: 	%td{ :valign => "top" }
+13: 	  %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
+
+    app/views/members/index.html.haml:10
+    haml (2.2.20) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.20) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.20) lib/haml/precompiler.rb:824:in `render_div'
+    haml (2.2.20) lib/haml/precompiler.rb:231:in `process_line'
+    haml (2.2.20) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:28:47) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (Inconsistent indentation: "        \t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #16 of app/views/members/index.html.haml:
+13:           %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
+14:             %tr
+15:               %td#profile_top{ :style => "background-image:url();background-repeat:no-repeat;height=50px;" }
+16:         	#profile_top_text
+17:         	  Member Find >
+18:         	  %span{ :style => "font-size:0.6em;" }
+19:         	    Search by ACA Member Name
+
+    app/views/members/index.html.haml:16
+    haml (2.2.20) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.20) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.20) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.20) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.20) lib/haml/precompiler.rb:232:in `process_line'
+    haml (2.2.20) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:29:56) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (The line was indented 8 levels deeper than the previous line.) on line #31 of app/views/members/index.html.haml:
+28:                       %a{ :href => "javascript:SubmitForm()" }
+29:                         %img{ :title => "Find", :src => "images/button.jpg", :border => "0", :alt => "Login" }
+30:                 - 
+31:                                 %table{ :border => "0", :align => "left", :width => "300" }
+32:                                   %tr
+33:                                     %td
+34:                                       %a{ :href => "member_find_profile.asp?ACA_ID_RQD=#{rs.Fields.Item("ACA_ID").Value}" }
+
+    app/views/members/index.html.haml:31
+    haml (2.2.20) lib/haml/precompiler.rb:199:in `precompile'
+    haml (2.2.20) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.20) lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:31:11) [GET]
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `rs' for #<ActionView::Base:0xb6da0244>) on line #33 of app/views/members/index.html.haml:
+30:                     %table{ :border => "0", :align => "left", :width => "300" }
+31:                       %tr
+32:                         %td
+33:                           %a{ :href => "member_find_profile.asp?ACA_ID_RQD=#{rs.Fields.Item("ACA_ID").Value}" }
+34:                             =# rs.Fields.Item("First_Name").Value
+35:                             \&nbsp;
+36:                             =# rs.Fields.Item("Last_Name").Value
+
+    app/views/members/index.html.haml:33:in `_run_haml_app47views47members47index46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:32:11) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (2.8ms)
+
+ActionView::TemplateError (Missing template members/_header.erb in view path app/views) on line #16 of app/views/layouts/application.html.haml:
+13:             %td#top
+14:           %tr
+15:             %td#header
+16:               = render :partial => "header"
+17:           = yield
+18:           %tr
+19:             %td#bottom-footer
+
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.20) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/application.html.haml:16:in `_run_haml_app47views47layouts47application46html46haml'
+    app/helpers/site_helper.rb:3:in `form_tag_for_controller'
+    app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:33:14) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (8.7ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 37ms (View: 33, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:33:15) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:33:20) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 00:33:22) [GET]
+
+ActionController::RoutingError (No route matches "/member_find.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:33:28) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:33:28) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:35:16) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:35:16) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20100306052459)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100306052459')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("members")[0m
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:35:41) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (1.3ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:35:41) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/members]
+/!\ FAILSAFE /!\  Sat Mar 06 00:39:22 -0500 2010
+  Status: 500 Internal Server Error
+  /home/blueruby/aca/app/helpers/members_helper.rb:6: syntax error, unexpected $end, expecting kEND
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:126:in `helper'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    /home/blueruby/aca/app/controllers/application_controller.rb:5
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:40:24) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 62ms (View: 59, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:40:25) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:40:27) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (1.0ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:41:40) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:41:40) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:43:26) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:43:26) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:43:54) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:44:48) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:45:04) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:45:04) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:46:07) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:46:08) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 69ms (View: 8, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:46:28) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:46:28) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:47:25) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (1.0ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:47:25) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:47:39) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:47:58) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:48:15) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:48:43) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:49:21) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:50:30) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:50:52) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:51:17) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:51:27) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:51:44) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:52:50) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:55:10) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+/!\ FAILSAFE /!\  Sat Mar 06 00:55:33 -0500 2010
+  Status: 500 Internal Server Error
+  /home/blueruby/aca/app/helpers/site_helper.rb:3: syntax error, unexpected '\n', expecting tASSOC
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:126:in `helper'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    /home/blueruby/aca/app/controllers/application_controller.rb:5
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/blueruby/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:55:42) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:57:07) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:57:25) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:58:30) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:58:43) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:58:43) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:59:05) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:59:05) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:59:50) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 00:59:50) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 01:00:34) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (1.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 01:00:41) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 01:00:42) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 01:00:54) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.8ms)
+Rendered layouts/_header (1.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 01:00:54) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
