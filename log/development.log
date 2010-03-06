@@ -1026,3 +1026,112 @@ Rendering site/join
 Rendered site/_header (1.1ms)
 Rendered site/_footer (0.2ms)
 Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/join]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-05 23:12:58) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (6.3ms)
+Rendered site/_footer (0.7ms)
+Completed in 49ms (View: 46, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-05 23:13:46) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-05 23:13:55) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-05 23:13:57) [GET]
+Rendering template within layouts/site
+Rendering site/dealer
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/dealer]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-05 23:13:58) [GET]
+Rendering template within layouts/site
+Rendering site/recruiting
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/recruiting]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-05 23:16:16) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-05 23:16:18) [GET]
+
+ActionController::RoutingError (No route matches "/member_find.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-05 23:40:31) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-05 23:41:17) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_javascript_includes (2.1ms)
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-05 23:41:28) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_javascript_includes (61.0ms)
+Rendered site/_header (1.2ms)
+Rendered site/_footer (0.1ms)
+Completed in 69ms (View: 66, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-05 23:43:25) [GET]
+Rendering template within layouts/site
+Rendering site/member
+Rendered site/_javascript_includes (1.1ms)
+Rendered site/_header (1.1ms)
+Rendered site/_footer (0.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/member]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-05 23:43:31) [GET]
+Rendering template within layouts/site
+Rendering site/index
+Rendered site/_javascript_includes (0.4ms)
+Rendered site/_header (1.0ms)
+Rendered site/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
