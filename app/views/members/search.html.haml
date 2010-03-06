@@ -1,0 +1,42 @@
+%tr
+  %td#content
+    #member_img
+      #pg_title
+        Member Center
+    %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+      %tr
+        %td#menu_area
+          #sidebar
+            %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
+              \&nbsp;
+        %td{ :valign => "top" }
+          %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
+            %tr
+              %td#profile_top{ :style => "background-image:url();background-repeat:no-repeat;height=50px;" }
+                #profile_top_text
+                  Member Find >
+                  %span{ :style => "font-size:0.6em;" }
+                    Search by ACA Member Name
+            %tr
+              %td#content_main
+                %p
+                  %table{ :cellspacing => "0", :border => "0", :style => "margin:0px 0px 10px 20px;padding:0px 0px 0px 0px;", :cellpadding => "0" }
+                    %tr
+                      %td
+                        %input{ :name => "ACA_ID_RQD", :type => "text", :style => "margin: 0px 0px 0px 0px;width:130px;" }
+                      %td#member_btn
+                        %a{ :href => "javascript:SubmitForm()" }
+                          %img{ :title => "Find", :src => "images/button.jpg", :border => "0", :alt => "Login" }
+                      %table{ :border => "0", :align => "left", :width => "300" }
+                        %tr
+                          %td
+                            %a{ :href => "http://blueru.by" }
+                              =# rs.Fields.Item("First_Name").Value
+                              \&nbsp;
+                              =# rs.Fields.Item("Last_Name").Value
+                        -#%div{ :style => "color: #c60a27;" }
+                          Your search did not match any members
+                          -# if request.querystring("error") = "1" then
+                          %div{ :style => "color: #c60a27;" }
+                          Member Not Found
+                          - end if

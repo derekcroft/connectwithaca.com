@@ -7,36 +7,45 @@
       %tr
         %td#menu_area
           #sidebar
-            %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
-              \&nbsp;
+            = render :partial => "members/sidebar"
         %td{ :valign => "top" }
           %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
             %tr
-              %td#profile_top{ :style => "background-image:url();background-repeat:no-repeat;height=50px;" }
-                #profile_top_text
-                  Member Find >
-                  %span{ :style => "font-size:0.6em;" }
-                    Search by ACA Member Name
+              %td#content_top
+                What can the ACA do for you today?
             %tr
-              %td#content_main
+              %td#content_main{ :style => "background-image:url(images/       mc_image.jpg);background-repeat:no-repeat;background-position:right bottom;" }
+                %h1
+                  Welcome to the ACA
                 %p
-                  %table{ :cellspacing => "0", :border => "0", :style => "margin:0px 0px 10px 20px;padding:0px 0px 0px 0px;", :cellpadding => "0" }
-                    %tr
-                      %td
-                        %input{ :name => "ACA_ID_RQD", :type => "text", :style => "margin: 0px 0px 0px 0px;width:130px;" }
-                      %td#member_btn
-                        %a{ :href => "javascript:SubmitForm()" }
-                          %img{ :title => "Find", :src => "images/button.jpg", :border => "0", :alt => "Login" }
-                      %table{ :border => "0", :align => "left", :width => "300" }
-                        %tr
-                          %td
-                            %a{ :href => "http://blueru.by" }
-                              =# rs.Fields.Item("First_Name").Value
-                              \&nbsp;
-                              =# rs.Fields.Item("Last_Name").Value
-                        -#%div{ :style => "color: #c60a27;" }
-                          Your search did not match any members
-                          -# if request.querystring("error") = "1" then
-                          %div{ :style => "color: #c60a27;" }
-                          Member Not Found
-                          - end if
+                  Finally!  Our &#8220;loose network of consultants&#8221; have now been brought together to produce a powerful resource for connecting.
+                %p
+                %ul.pg
+                  The ACA has been created so we can:
+                  %li
+                    %b
+                      >
+                    Connect consultants with consultants Connect marketing companies with consultants, and Connect opportunities to consultants. As we grow in numbers, so will the Association&#8217;s ability to add additional features and resources that only you as members will have access to.
+                %p
+                %ul.pg{ :style => "width:385px;height:190px;" }
+                  Resources such as:
+                  %li
+                    %b
+                      >
+                    Professional website presence to market yourself.
+                  %li
+                    %b
+                      >
+                    Unrivaled networking -- Its always been tough to keep up with each other.  With ACA you can keep in close contact with those in the know.
+                  %li
+                    %b
+                      >
+                    Dedicated resources focused on helping to connect you with that next industry project suited to your skill set.
+                  %li
+                    %b
+                      >
+                    Dealer Direct opportunities will allow you to both access and share products and services that will help make you successful.
+                  %li
+                    %b
+                      >
+                    An unrivaled, searchable online training content library.
