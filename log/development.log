@@ -2674,3 +2674,217 @@ ActionController::RoutingError (No route matches "/images/less_arrow.gif" with {
   passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
 
 Rendering rescues/layout (not_found)
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 10:19:48) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered members/_sidebar (0.3ms)
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://aca/member]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 10:19:49) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://aca/]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 10:19:50) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered members/_sidebar (0.3ms)
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://aca/member]
+
+
+Processing SiteController#dealer (for 127.0.0.1 at 2010-03-06 10:19:50) [GET]
+Rendering template within layouts/application
+Rendering site/dealer
+Rendered site/_javascript_includes (0.5ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 33ms (View: 30, DB: 0) | 200 OK [http://aca/dealer]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-06 10:19:51) [GET]
+Rendering template within layouts/application
+Rendering site/recruiting
+Rendered site/_javascript_includes (0.4ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://aca/recruiting]
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-06 10:20:45) [GET]
+Rendering template within layouts/application
+Rendering site/recruiting
+Rendered site/_javascript_includes (0.5ms)
+Rendered layouts/_header (1.5ms)
+ERROR: compiling _run_haml_app47views47layouts47_footer46html46haml_locals_footer_object RAISED compile error
+/home/blueruby/aca/app/views/layouts/_footer.html.haml:4: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47layouts47_footer46html46haml_locals_footer_object(local_assigns)
+            old_output_buffer = output_buffer;footer = local_assigns[:footer];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :encoding=>nil, :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;
+_hamlout.push_text("Copyright\n", 0, false);haml_temp =  Time.now.year;
+_hamlout.push_text("Automotive Consultant Association. All rights reserved.\n", 0, false);end;_hamlout.buffer << _hamlout.format_script_false_false_false_false_false_false_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));_hamlout.push_text("\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/blueruby/aca/app/views/layouts/_footer.html.haml:4:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render_without_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers.rb:96:in `non_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/home/blueruby/aca/app/views/layouts/application.html.haml:20:in `_run_haml_app47views47layouts47application46html46haml'
+/home/blueruby/aca/app/helpers/site_helper.rb:3:in `form_tag_for_controller'
+/home/blueruby/aca/app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/home/blueruby/.gem/ruby/1.8/gems/haml-2.2.20/lib/sass/plugin/rails.rb:20:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/vendor/rack-1.0.0-git/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/vendor/rack-1.0.0-git/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/vendor/rack-1.0.0-git/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/vendor/rack-1.0.0-git/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/vendor/rack-1.0.0-git/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.7/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/home/blueruby/aca/app/views/layouts/_footer.html.haml:4: syntax error, unexpected kENSURE, expecting $end) on line #4 of app/views/layouts/_footer.html.haml:
+1: Copyright
+2: = Time.now.year
+3:  Automotive Consultant Association. All rights reserved.
+
+    app/views/layouts/_footer.html.haml:4:in `compile!'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.20) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/application.html.haml:20:in `_run_haml_app47views47layouts47application46html46haml'
+    app/helpers/site_helper.rb:3:in `form_tag_for_controller'
+    app/views/layouts/application.html.haml:9:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    passenger (2.2.7) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.7) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (129.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#recruiting (for 127.0.0.1 at 2010-03-06 10:21:00) [GET]
+Rendering template within layouts/application
+Rendering site/recruiting
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.1ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://aca/recruiting]
