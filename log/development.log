@@ -1452,3 +1452,29 @@ ActionController::RoutingError (No route matches "/member_find.asp" with {:metho
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 00:24:19) [GET]
+
+ActionController::RoutingError (No route matches "/member_find.asp" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 00:24:27) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (0.5ms)
+Rendered site/_header (1.2ms)
+Rendered site/_footer (0.2ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]

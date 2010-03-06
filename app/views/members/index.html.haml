@@ -1,106 +1,47 @@
-%script
-  function SubmitForm(){
-  if(Validate_Form_No_Submit()){
-  document.thisForm.action = "member_find.asp";
-  document.thisForm.submit();
-  }
-  }
-  function Init(){
-  document.thisForm.ACA_ID_RQD.select();
-  document.thisForm.ACA_ID_RQD.focus();
-  }
-%body{ :onload => "Init();" }
-  %form{ :name => "thisForm", :method => "POST", :onsubmit => "return(false)" }
-    %center
-      %table#container{ :cellspacing => "0", :cellpadding => "0" }
+%tr
+  %td#content
+      #member_img
+        #pg_title
+  	Member Center
+      %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
         %tr
-          %td#top
-        %tr
-          %td#header
-            - header 2
-        %tr
-          %td#content
-            #member_img
-              #pg_title
-                Member Center
-            %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
-              %tr
-                %td#menu_area
-                  /
-                    SIDE MENU //
-                  #sidebar
-                    %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
-                      \&nbsp;
-                %td{ :valign => "top" }
-                  /
-                    CONTENT AREA //
-                  %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
-                    %tr
-                      %td#profile_top{ :style => "background-image:url();background-repeat:no-repeat;height=50px;" }
-                        #profile_top_text
-                          Member Find >
-                          %span{ :style => "font-size:0.6em;" }
-                            Search by ACA Member Name
-                    %tr
-                      %td#content_main
-                        %p
-                        %table{ :cellspacing => "0", :border => "0", :style => "margin:0px 0px 10px 20px;padding:0px 0px 0px 0px;", :cellpadding => "0" }
-                          %tr
-                            %td
-                              %input{ :name => "ACA_ID_RQD", :type => "text", :style => "margin: 0px 0px 0px 0px;width:130px;" }
-                            %td#member_btn
-                              %a{ :href => "javascript:SubmitForm()" }
-                                %img{ :title => "Find", :src => "images/button.jpg", :border => "0", :alt => "Login" }
-                        - 
-- if plNullCheck(Request.Form("ACA_ID_RQD"),"") <> "" then
-- 
-- dim cmd, rs
-- set cmd = Server.CreateObject("ADODB.Command")
-- set rs = Server.CreateObject("ADODB.Recordset")
-- 
-- rs.CursorLocation = adUseClient
-- 
-- plCon_Open()
-- 
-- plCmd_Params_Clear cmd, 0
-- plCmd_Set cmd, plCon, "con451.Members_Find_Get"
-- plCmd_Param_Add cmd, "Search VARCHAR(50)", plNullCheck(Request.Form("ACA_ID_RQD"),"")
-- 
-- rs.open cmd,,adOpenForwardOnly,adLockReadOnly
-- if not (rs.eof and rs.bof) then
-- 
-                        %table{ :border => "0", :align => "left", :width => "300" }
-                          - 
-- do until rs.eof
-- 
-                          %tr
-                            %td
-                              %a{ :href => "member_find_profile.asp?ACA_ID_RQD=#{rs.Fields.Item("ACA_ID").Value}" }
-                                = rs.Fields.Item("First_Name").Value
-                                \&nbsp;
-                                = rs.Fields.Item("Last_Name").Value
-                          - 
-- rs.movenext
-- loop
-- 
-                        - 
-- else
-- 
-                        %div{ :style => "color: #c60a27;" }
-                          Your search did not match any members
-                        - 
-- end if
-- rs.close
-- 
-- plCon_Close
-- set rs = nothing
-- set cmd = nothing
-- 
-- end if
-                        - if request.querystring("error") = "1" then
-                        %div{ :style => "color: #c60a27;" }
-                          Member Not Found
-                        - end if
-        %tr
-          %td#bottom-footer
-            - footer
+  	%td#menu_area
+  	  /
+  	    SIDE MENU //
+  	  #sidebar
+  	    %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
+  	      \&nbsp;
+  	%td{ :valign => "top" }
+  	  /
+  	    CONTENT AREA //
+  	  %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
+  	    %tr
+  	      %td#profile_top{ :style => "background-image:url();background-repeat:no-repeat;height=50px;" }
+  		#profile_top_text
+  		  Member Find >
+  		  %span{ :style => "font-size:0.6em;" }
+  		    Search by ACA Member Name
+  	    %tr
+  	      %td#content_main
+  		%p
+  		%table{ :cellspacing => "0", :border => "0", :style => "margin:0px 0px 10px 20px;padding:0px 0px 0px 0px;", :cellpadding => "0" }
+  		  %tr
+  		    %td
+  		      %input{ :name => "ACA_ID_RQD", :type => "text", :style => "margin: 0px 0px 0px 0px;width:130px;" }
+  		    %td#member_btn
+  		      %a{ :href => "javascript:SubmitForm()" }
+  			%img{ :title => "Find", :src => "images/button.jpg", :border => "0", :alt => "Login" }
+  		- 
+                          %table{ :border => "0", :align => "left", :width => "300" }
+                            %tr
+                              %td
+                                %a{ :href => "member_find_profile.asp?ACA_ID_RQD=#{rs.Fields.Item("ACA_ID").Value}" }
+                                  =# rs.Fields.Item("First_Name").Value
+                                  \&nbsp;
+                                  =# rs.Fields.Item("Last_Name").Value
+                          %div{ :style => "color: #c60a27;" }
+                            Your search did not match any members
+                         -# if request.querystring("error") = "1" then
+                          %div{ :style => "color: #c60a27;" }
+                            Member Not Found
+                          - end if
