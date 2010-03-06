@@ -2501,3 +2501,176 @@ Rendered members/_javascript_includes (0.9ms)
 Rendered layouts/_header (1.1ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-03-06 10:09:44) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Rendered site/_javascript_includes (1.7ms)
+Rendered layouts/_header (6.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 58ms (View: 55, DB: 0) | 200 OK [http://aca/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 10:10:31) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (3.0ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 34ms (View: 31, DB: 0) | 200 OK [http://aca/members]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-03-06 10:10:31) [GET]
+Rendering template within layouts/application
+Rendering members/index
+Rendered members/_javascript_includes (0.9ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://aca/members]
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 10:18:28) [GET]
+Rendering template within layouts/application
+Rendering site/member
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::First_Name) on line #7 of app/views/members/_sidebar.html.haml:
+4:       Invalid Login!
+5:     %a#four{ :href => "javascript:toggle('four','foursub');" }
+6:       > Logged in as...
+7:       = First_Name
+8:       \&nbsp;
+9:       = Last_Name
+10:     %ul#foursub.sub
+
+    app/views/members/_sidebar.html.haml:7:in `_run_haml_app47views47members47_sidebar46html46haml_locals_object_sidebar'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.20) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/site/member.html.haml:10:in `_run_haml_app47views47site47member46html46haml'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+    passenger (2.2.7) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+    passenger (2.2.7) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (72.3ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#member (for 127.0.0.1 at 2010-03-06 10:18:52) [GET]
+Rendering template within layouts/application
+Rendering site/member
+Rendered members/_sidebar (17.2ms)
+Rendered site/_javascript_includes (0.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 28ms (View: 25, DB: 0) | 200 OK [http://aca/member]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 10:19:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/less_arrow.gif" with {:method=>:get}):
+  passenger (2.2.7) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.7) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 10:19:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/less_arrow.gif" with {:method=>:get}):
+  passenger (2.2.7) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.7) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-06 10:19:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/less_arrow.gif" with {:method=>:get}):
+  passenger (2.2.7) lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  passenger (2.2.7) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:374:in `start_request_handler'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:330:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.7) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.7) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)

@@ -6,11 +6,8 @@
     %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
       %tr
         %td#menu_area
-          /
-            SIDE MENU //
           #sidebar
-            /
-              \#include file="include/member_sidebar.asp"
+            = render :partial => "members/sidebar"
         %td{ :valign => "top" }
           /
             CONTENT AREA //
