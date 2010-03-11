@@ -1,0 +1,6 @@
+<< ./ >>
+	skip: access_log agent_log error_log referer_log *_log.[1-6]
+<< ./mkstats/ >>
+	skip: *.html *.gif
+<< ./mkstats21/ >>
+	skip: *.html *.gif

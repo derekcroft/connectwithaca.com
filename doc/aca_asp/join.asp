@@ -1,0 +1,108 @@
+<%@Language="VBSCRIPT"%>
+<%Option Explicit%>
+<!-- #include file="include/header.asp" -->
+<!-- #include file="include/library.asp" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>ACA</title>
+<link rel="stylesheet" href="css/aca_global.css" type="text/css">
+<script type="text/javascript" src="js/aca_main.js"></script>
+</head>
+<body>
+<center>
+<table id="container" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="top"></td>
+	</tr>
+	<tr>
+		<td id="header">
+			<%header 5%>
+		</td>
+	</tr>
+	<tr>
+		<td id="content">
+			<div id="member_img"><div id="pg_title">Join ACA Today!</div></div>
+			<table id="pg_container" cellspacing="0" cellpadding="0">
+				<tr>
+					<td id="menu_area">
+						<!-- SIDE MENU //-->
+						<div id="sidebar">
+							<ul id="cust" class="nav">
+								<li>
+									<a id="two" href="application.asp">> Membership Application</a>
+								</li>
+								<li>
+									<a id="three" href="mailto:join@connectwithaca.com">> Contact ACA</a>
+								</li>
+							</ul>
+						</div>
+					</td>
+					<td valign="top">
+						<!-- CONTENT AREA //-->
+						<table id="content_table" cellspacing="0" cellpadding="0">
+							<tr>
+								<td id="content_top">Membership Advantages</td>
+							</tr>
+							<tr>
+								<td id="content_main" style="background-image:url();background-repeat:no-repeat;background-position:right bottom;">
+
+									<table>
+										<tr>
+											<td style="width:100%;vertical-align:top;padding:0px 10px 10px 0px;">
+											<h1>ACA Membership is $200 Per Year</h1>
+											<p>
+												<ul class="pg">Networking
+													<li>As our membership grows you will not find a more extensive and relevant “Rolodex”.  Keeping our members connected and in touch is one of our top priorities.</li>
+												</ul>
+											</p>
+											<p>
+												<ul class="pg">Dealer Direct Opportunities
+													<li>Our on-line library of available products, services and content will be the most extensive available.  You will also be able to leverage the member body to help market and distribute content or a product you have had success with as well .....and get paid for it!</li>
+												</ul>
+											</p>
+											<p>
+												<ul class="pg">Recruiting Pipeline
+													<li>As our numbers grow so will our strength and ability to attract top recruiters. The ACA will be in a position to offer it's recruiting services directly to the OEM's and their marketing companies.  This will provide you with the first opportunity to respond to new programs as they develop.  Once they recruit the ACA way they will never go back to the tired methods of the past.</li>
+												</ul>
+											</p>
+											<div style="float:right;"><a href="application.asp"><img src="images/join_btn.jpg" border="0" alt="Join" title="Join" /></a></div>
+											</td>
+											<!--<td style="width:50%;vertical-align:top;padding:0px 0px 10px 10px;">
+											<h1>Founding ACA Member<br />$500 (Only 30 will be offered)<br /><div style="color:#000000;font-weight:bold;font-size: 0.8em;">In addition to all of the Basic Membership benefits the Founding Members will receive:</div></h1>
+											<p>
+												<ul class="pg">Membership For Life
+													<li>As a Founding Member you will never be asked to re-up every year for the $200 membership fee.  Obviously if your on for 3 or more years this benefit pays for itself.</li>
+												</ul>
+											</p>
+											<p>
+												<ul class="pg">Personal Website
+													<li>The ACA will leverage it’s clean look and design to set-up your own website with direct links to and from the ACA website.</ul>
+												</ul>
+											</p>
+											<p>
+												<ul class="pg">Higher Commission Structure
+													<li>To reward your investment in the ACA, a higher commission structure will be allotted to Founding Members for any Dealer Direct opportunities or Recruiting referrals.</li>
+												</ul>
+											</p>
+											<div style="float:right;"><a href="application.asp"><img src="images/join_btn.jpg" border="0" alt="Join" title="Join" /></a></div>
+											</td>-->
+										</tr>
+									</table>
+
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td id="bottom-footer"><%footer%></td>
+	</tr>
+</table>
+</center>
+</body>
+</html>
+

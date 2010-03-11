@@ -1,0 +1,9 @@
+AuthUserFile /u/httpd/cgi-bin/secure/.htpasswd
+AuthGroupFile /dev/null
+AuthName Control Panel
+AuthType Basic
+DirectoryIndex index.html /cgi-bin/secure/index
+
+<Limit GET POST>
+require user con451
+</Limit>
