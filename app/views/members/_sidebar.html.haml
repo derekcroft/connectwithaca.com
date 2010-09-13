@@ -1,36 +1,6 @@
 %ul#cust.nav
   %li
-    %div{ :style => "color: #c60a27;" }
-      Invalid Login!
-    %a#four{ :href => "javascript:toggle('four','foursub');" }
-      > Logged in as...
-      First_Name
-      \&nbsp;
-      Last_Name
-    %ul#foursub.sub
-      %li
-        %a{ :href => "change_password.asp" }
-          Change Password
-      %li
-        %a{ :href => "logout.asp" }
-          Logout
-    %div{ :style => "margin:10px 0px 0px 20px;padding:0px 0px 0px 0px;" }
-      Email Address
-      %br
-      %input{ :name => "Email_Address_EML_RQD", :type => "text", :value => "", :style => "margin: 0px 0px 0px 0px;width:153px;" }
-    %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
-      Password
-    %table{ :cellspacing => "0", :border => "0", :style => "margin:0px 0px 10px 20px;padding:0px 0px 0px 0px;", :cellpadding => "0" }
-      %tr
-        %td
-          %input{ :name => "Password_RQD", :type => "password", :style => "margin: 0px 0px 0px 0px;width:130px;" }
-        %td#member_btn
-          %a{ :href => "javascript:SubmitForm()" }
-            %img{ :title => "Login", :src => "images/button.jpg", :border => "0", :alt => "Login" }
-      %tr
-        %td{ :colspan => "2" }
-          -# plCheckbox "chkRemember", 0, 1
-          Remember my email address
+    = render :partial => 'sessions/login'
   %li
     %a#two{ :href => "javascript:toggle('two','twosub');" }
       > Member Profile

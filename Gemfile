@@ -6,6 +6,7 @@ gem 'haml'
 
 group :development do
   # bundler requires these gems in development
+  gem 'hpricot'
 end
 
 group :test do

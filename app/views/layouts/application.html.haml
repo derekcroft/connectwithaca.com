@@ -6,15 +6,14 @@
     %title
       ACA
   %body{ :onload => "Init();" }
-    - form_tag_for_controller do
-      %center
-        %table#container{ :cellspacing => "0", :cellpadding => "0" }
-          %tr
-            %td#top
-          %tr
-            %td#header
-              = render :partial => "layouts/header"
-          = yield
-          %tr
-            %td#bottom-footer
-              = render :partial => "layouts/footer"
+    %center
+      %table#container{ :cellspacing => "0", :cellpadding => "0" }
+        %tr
+          %td#top
+        %tr
+          %td#header
+            = render :partial => "layouts/header"
+        = yield
+        %tr
+          %td#bottom-footer
+            = render :partial => "layouts/footer"

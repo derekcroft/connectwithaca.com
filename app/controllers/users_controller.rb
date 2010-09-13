@@ -25,4 +25,15 @@ class UsersController < ApplicationController
       render :action => 'new'
     end
   end
+
+  def change_password
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.password = params[:password]
+    @user.password_confirmation = params[:password_confirmation]
+    @user.save!
+    redirect_to logout_path
+  end
 end

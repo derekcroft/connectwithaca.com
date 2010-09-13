@@ -1,0 +1,29 @@
+- if logged_in?
+  %a#four{ :href => "javascript:toggle('four','foursub');" }
+    = "> Logged in as #{current_user.email}"
+  %ul#foursub.sub
+    %li
+      = link_to "Change Password", change_password_path
+    %li
+      = link_to "Logout", logout_path
+- else
+  - if flash[:warning]
+    #invalid_login{ :style => "color: #c60a27;" }
+      = flash[:warning]
+  - form_tag session_path do
+    %div{ :style => "margin:10px 0px 0px 20px;padding:0px 0px 0px 0px;" }
+      = label_tag 'login', 'Email Address'
+      %br
+      = text_field_tag 'login', @login, :style => "margin: 0px 0px 0px 0px;width:153px;" 
+    %div{ :style => "margin:5px 0px 0px 20px;padding:0px 0px 0px 0px;" }
+      = label_tag 'password'
+    %table{ :cellspacing => "0", :border => "0", :style => "margin:0px 0px 10px 20px;padding:0px 0px 0px 0px;", :cellpadding => "0" }
+      %tr
+        %td
+          = password_field_tag 'password', nil, :style => "margin: 0px 0px 0px 0px;width:130px;"
+        %td#member_btn
+          = image_submit_tag "button.jpg"
+      %tr
+        %td{ :colspan => "2" }
+          = check_box_tag 'remember_me', '1', @remember_me 
+          = label_tag 'remember_me', 'Remember my login'
