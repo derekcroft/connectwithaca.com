@@ -1,6 +1,6 @@
 - if logged_in?
   %a#four{ :href => "javascript:toggle('four','foursub');" }
-    = "> Logged in as #{current_user.email}"
+    = "> Logged in as #{current_user.full_name}"
   %ul#foursub.sub
     %li
       = link_to "Change Password", change_password_path
