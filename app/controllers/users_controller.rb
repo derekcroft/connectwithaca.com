@@ -33,7 +33,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.password = params[:password]
     @user.password_confirmation = params[:password_confirmation]
-    @user.save!
-    redirect_to logout_path
+    if @user.save
+      redirect_to logout_path
+    else
+      render :change_password
+    end
   end
 end
