@@ -1,63 +1,61 @@
-%tr
-  %td#content
-    #member_img
-      #pg_title
-        Dealer Direct
-    %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
-      %tr
-        %td#menu_area
-          /
-            SIDE MENU //
-          #sidebar
-            %ul#cust.nav
+#member_img
+  #pg_title
+    Dealer Direct
+%table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+  %tr
+    %td#menu_area
+      /
+        SIDE MENU //
+      #sidebar
+        %ul#cust.nav
+          %li
+            %a#one{ :href => "javascript:toggle('one','onesub');" }
+              > Search Opportunities
+            %ul#onesub.sub
               %li
-                %a#one{ :href => "javascript:toggle('one','onesub');" }
-                  > Search Opportunities
-                %ul#onesub.sub
-                  %li
-                    %a{ :href => "#" }
-                      All
-                  %li
-                    %a{ :href => "#" }
-                      Products Only
-                  %li
-                    %a{ :href => "#" }
-                      Services Only
+                %a{ :href => "#" }
+                  All
+              %li
+                %a{ :href => "#" }
+                  Products Only
+              %li
+                %a{ :href => "#" }
+                  Services Only
+          /
+            <li>
+            <a id="two" href="javascript:toggle('two','twosub');">>       Submit A New Opportunity</a>
+            </li>
+          %li
+            %a#three{ :href => "javascript:toggle('three','threesub');" }
+              > Recent Additions
+            %ul#threesub.sub
               /
-                <li>
-                <a id="two" href="javascript:toggle('two','twosub');">>       Submit A New Opportunity</a>
-                </li>
-              %li
-                %a#three{ :href => "javascript:toggle('three','threesub');" }
-                  > Recent Additions
-                %ul#threesub.sub
-                  /
-                    <li><a href="#">Teletracker</a></li>
-                    <li><a href="#">StreaMail</a></li>
-              %li
-                %a#four{ :href => "javascript:toggle('four','foursub');" }
-                  > Submit Opportunity
-                %ul#foursub.sub
-              %li
-                %a#five{ :href => "javascript:toggle('five','fivesub');" }
-                  > Content Library
-                %ul#fivesub.sub
-        %td{ :valign => "top" }
-          /
-            CONTENT AREA //
-          %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
-            /
-              <tr>
-              <td id="content_top">&amp;nbsp;</td>
-              </tr>
-              \//
-            %tr
-              %td#content_main{ :style => "background-image:url(images/       dealer_img.jpg);background-repeat:no-repeat;background-position:right bottom;" }
-                %h1
-                  Your resource for unlimited possibilities
-                %p{ :style => "width:100%;" }
-                  Whether you're looking for some additional opportunities or looking to tell others about your own product or service, Dealer Direct on the ACA website is the way to go!  Where else can you have access to multiple types of products that you can market immediately in just a few clicks.
-                %p{ :style => "width:290px;" }
-                  In just a few clicks you can search for a new opportunity, review all of the related materials, review and sign the associated NDA and reseller&#8217;s agreement, and gain access to all of the sales support material required to begin selling and supporting dealership direct opportunities.
-                %p{ :style => "width:290px;" }
-                  Dealer Direct was actually the concept described to us by multiple consultants that have developed and delivered successful content of their own and were looking for an efficient way to distribute it.  The ACA is all too happy to oblige!
+                <li><a href="#">Teletracker</a></li>
+                <li><a href="#">StreaMail</a></li>
+          %li
+            %a#four{ :href => "javascript:toggle('four','foursub');" }
+              > Submit Opportunity
+            %ul#foursub.sub
+          %li
+            %a#five{ :href => "javascript:toggle('five','fivesub');" }
+              > Content Library
+            %ul#fivesub.sub
+    %td{ :valign => "top" }
+      /
+        CONTENT AREA //
+      %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
+        /
+          <tr>
+          <td id="content_top">&amp;nbsp;</td>
+          </tr>
+          \//
+        %tr
+          %td#content_main{ :style => "background-image:url(images/       dealer_img.jpg);background-repeat:no-repeat;background-position:right bottom;" }
+            %h1
+              Your resource for unlimited possibilities
+            %p{ :style => "width:100%;" }
+              Whether you're looking for some additional opportunities or looking to tell others about your own product or service, Dealer Direct on the ACA website is the way to go!  Where else can you have access to multiple types of products that you can market immediately in just a few clicks.
+            %p{ :style => "width:290px;" }
+              In just a few clicks you can search for a new opportunity, review all of the related materials, review and sign the associated NDA and reseller&#8217;s agreement, and gain access to all of the sales support material required to begin selling and supporting dealership direct opportunities.
+            %p{ :style => "width:290px;" }
+              Dealer Direct was actually the concept described to us by multiple consultants that have developed and delivered successful content of their own and were looking for an efficient way to distribute it.  The ACA is all too happy to oblige!

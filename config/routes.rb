@@ -18,6 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   map.dealer '/dealer', :controller => "site", :action => "dealer"
   map.recruiting '/recruiting', :controller => "site", :action => "recruiting"
   map.join '/join', :controller => "site", :action => "join"
+  map.member_center '/member_center', :controller => "site", :action => "member_center"
   
   # Default route
   map.root :controller => "site", :action => "index"

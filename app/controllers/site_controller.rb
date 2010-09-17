@@ -1,4 +1,6 @@
 class SiteController < ApplicationController
+  include AuthenticatedSystem
+
   def index
   end
 
@@ -6,5 +8,8 @@ class SiteController < ApplicationController
   end
 
   def recruiting
+  end
+  
+  def member_center
   end
 end

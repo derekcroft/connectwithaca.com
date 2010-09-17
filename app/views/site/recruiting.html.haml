@@ -1,46 +1,37 @@
-%tr
-  %td#content
-    #member_img
-      #pg_title
-        Recruiting
-    %table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
-      %tr
-        %td#menu_area
-          /
-            SIDE MENU //
-          #sidebar
-            %ul#cust.nav
+#member_img
+  #pg_title
+    Recruiting
+%table#pg_container{ :cellspacing => "0", :cellpadding => "0" }
+  %tr
+    %td#menu_area
+      #sidebar
+        %ul#cust.nav
+          %li
+            %a#two{ :href => "javascript:toggle('two','twosub');" }
+              > Complete Program Profile
+            %ul#twosub.sub
               %li
-                %a#two{ :href => "javascript:toggle('two','twosub');" }
-                  > Complete Program Profile
-                %ul#twosub.sub
-                  %li
-                    %a{ :href => "recruiting_form.asp" }
-                      Program Profile Form
-              %li
-                %a#three{ :href => "#" }
-                  > Referral Requests
-              %li
-                %a#four{ :href => "#" }
-                  > My Program Profiles
-        %td{ :valign => "top" }
-          /
-            CONTENT AREA //
-          %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
-            /
-              <tr>
-              <td id="content_top">&amp;nbsp;</td>
-              </tr>
-              \//
-            %tr
-              %td#content_main{ :style => "background-image:url(images/       recruiting.jpg);background-repeat:no-repeat;background-position:right bottom;" }
-                %h1
-                  Access the best consultants in the industry here
-                %p{ :style => "width:350px;" }
-                  So your looking for the best resources available to make your program a success.  Look no further.  In-dealership consultants, facilitators, stand-up presenters, Ride &amp; Drive specialists, instructional designers&#8212;the ACA represents all the best.
-                %p{ :style => "width:350px;" }
-                  By completing the Program Profile, located on the upper left navigation bar, you will alert an ACA Recruiting Specialist that will be personally assigned to finding you the right personnel to meet the specific needs of your program with our database of members.
-                %p{ :style => "width:350px;" }
-                  Within 48 hours you will have your own access to all of your Program Profiles available to you through the ACA.  No running expensive &#8220;help wanted&#8221; ads, scouring through tons of irrelevant resumes or thumbing through an outdated rolodex.  Choose the best candidates from their profiles, click 'Contact Me' and receive a response back immediately.
-                %p{ :style => "width:320px;" }
-                  You'll never recruit automotive consultants the same way again!
+                %a{ :href => "recruiting_form.asp" }
+                  Program Profile Form
+          %li
+            %a#three{ :href => "#" }
+              > Referral Requests
+          %li
+            %a#four{ :href => "#" }
+              > My Program Profiles
+    %td{ :valign => "top" }
+      %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
+        %tr
+          %td#content_top &nbsp;
+        %tr
+          %td#content_main{ :style => "background-image:url(images/       recruiting.jpg);background-repeat:no-repeat;background-position:right bottom;" }
+            %h1
+              Access the best consultants in the industry here
+            %p{ :style => "width:350px;" }
+              So your looking for the best resources available to make your program a success.  Look no further.  In-dealership consultants, facilitators, stand-up presenters, Ride &amp; Drive specialists, instructional designers&#8212;the ACA represents all the best.
+            %p{ :style => "width:350px;" }
+              By completing the Program Profile, located on the upper left navigation bar, you will alert an ACA Recruiting Specialist that will be personally assigned to finding you the right personnel to meet the specific needs of your program with our database of members.
+            %p{ :style => "width:350px;" }
+              Within 48 hours you will have your own access to all of your Program Profiles available to you through the ACA.  No running expensive &#8220;help wanted&#8221; ads, scouring through tons of irrelevant resumes or thumbing through an outdated rolodex.  Choose the best candidates from their profiles, click 'Contact Me' and receive a response back immediately.
+            %p{ :style => "width:320px;" }
+              You'll never recruit automotive consultants the same way again!

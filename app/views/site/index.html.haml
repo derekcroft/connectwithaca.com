@@ -1,60 +1,58 @@
-%tr
-  %td#content
-    #home_img
-      #brand1
-        The Automotive Consultant Association (ACA) is a national membership association dedicated to the support, promotion and success of consultants in the automotive industry.
-      #brand2
-        \&nbsp;&nbsp;Connecting Experience >
-        %br
-        %div{ :style => "text-align:right;" }
-          < Connecting Opportunities
-        %br
-        %div{ :style => "vertical-align:bottom;" }
-          Connecting you >
-    #member_images
-      \&nbsp;
-    %table#home_table{ :cellspacing => "0", :cellpadding => "0" }
-      %tr
-        %td
-          .home_titles
-            Member Center
-          %a{ :href => members_path }
-            > Member Log-In
-          %br
-          > Membership Directory
-          %br
-          %a{ :href => "member_find.asp" }
-            > Find a Member
-          #btn
-            %a{ :href => members_path }
-              %img{ :title => "More", :src => "images/button.jpg", :border => "0", :alt => "More" }
-        %td
-          .home_titles
-            Recruiting
-          > Looking for Automotive Consultants? Locate the best consultants to fit your project faster and more effectively.
-          %br
-          %br
-          > Complete our Program Profile form and have all the candidate profiles you require in less than 48 hours!
-          #btn
-            %a{ :href => recruiting_path }
-              %img{ :title => "More", :src => "images/button.jpg", :border => "0", :alt => "More" }
-        %td
-          .home_titles
-            Dealer Direct
-          > ACA certified Products and Services you can leverage to build your business!
-          %br
-          %br
-          > Building the most extensive in-dealership training content library available
-          #btn
-            %a{ :href => dealer_path }
-              %img{ :title => "More", :src => "images/button.jpg", :border => "0", :alt => "More" }
-        %td{ :style => "border:none;" }
-          .home_titles
-            %a{ :href => join_path }
-              %strong
-                Join ACA Today!
-          > Benefits
-          %br
-          > Application
-          %br
-          > Membership Dues
+#home_img
+  #brand1
+    The Automotive Consultant Association (ACA) is a national membership association dedicated to the support, promotion and success of consultants in the automotive industry.
+  #brand2
+    \&nbsp;&nbsp;Connecting Experience >
+    %br
+    %div{ :style => "text-align:right;" }
+      < Connecting Opportunities
+    %br
+    %div{ :style => "vertical-align:bottom;" }
+      Connecting you >
+#member_images
+  \&nbsp;
+%table#home_table{ :cellspacing => "0", :cellpadding => "0" }
+  %tr
+    %td
+      .home_titles
+        Member Center
+      %a{ :href => member_center_path }
+        > Member Log-In
+      %br
+      > Membership Directory
+      %br
+      %a{ :href => "member_find.asp" }
+        > Find a Member
+      #btn
+        %a{ :href => member_center_path }
+          %img{ :title => "More", :src => "images/button.jpg", :border => "0", :alt => "More" }
+    %td
+      .home_titles
+        Recruiting
+      > Looking for Automotive Consultants? Locate the best consultants to fit your project faster and more effectively.
+      %br
+      %br
+      > Complete our Program Profile form and have all the candidate profiles you require in less than 48 hours!
+      #btn
+        %a{ :href => recruiting_path }
+          %img{ :title => "More", :src => "images/button.jpg", :border => "0", :alt => "More" }
+    %td
+      .home_titles
+        Dealer Direct
+      > ACA certified Products and Services you can leverage to build your business!
+      %br
+      %br
+      > Building the most extensive in-dealership training content library available
+      #btn
+        %a{ :href => dealer_path }
+          %img{ :title => "More", :src => "images/button.jpg", :border => "0", :alt => "More" }
+    %td{ :style => "border:none;" }
+      .home_titles
+        %a{ :href => join_path }
+          %strong
+            Join ACA Today!
+      > Benefits
+      %br
+      > Application
+      %br
+      > Membership Dues
