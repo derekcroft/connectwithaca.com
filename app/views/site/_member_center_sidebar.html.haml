@@ -5,9 +5,10 @@
     %a#two{ :href => "javascript:toggle('two','twosub');" }
       > Member Profile
     %ul#twosub.sub
-      %li
-        %a{ :href => "profile.asp" }
-          Edit My Profile
+      - if logged_in?
+        %li
+          %a{ :href => "profile.asp" }
+            Edit My Profile
       %li
         %a{ :href => "http://www.connectwithaca.com/shopsite_sc/page1.html" }
           Annual Membership (PayPal)
