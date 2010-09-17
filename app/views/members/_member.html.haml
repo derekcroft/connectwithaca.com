@@ -1,0 +1,9 @@
+%tr
+  %td{:align => "left"}= link_to member.name, member
+  %td{:align => "left"}= member.email
+  %td
+    = link_to "Edit", edit_member_profile_path(member)
+    = link_to "View", member_profile_path(member) 
+  %td= member.active ? "&#x2713;" : ""
+  %td= member.created_at.strftime("%m/%d/%Y")
+  %td &nbsp;

@@ -1,0 +1,33 @@
+#member_img
+  #pg_title Member Center
+%table#pg_container{:cellpadding => "0", :cellspacing => "0"}
+  %tr
+    %td#menu_area
+      #sidebar
+        %ul#cust.nav
+          = render "site/member_center_sidebar"
+    %td{:valign => "top"}
+      %table#content_table{:cellpadding => "0", :cellspacing => "0"}
+        %tr
+          %td#content_top
+            Member List - Add New
+        %tr
+          %td#content_main{:style => "background-repeat:no-repeat;background-position:right bottom;"}
+            %table{:align => "center", :border => "0", :width => "99%"}
+              %tr{:valign => "bottom"}
+                %th Name
+                %th
+                  Email
+                  %br
+                  @connectwithaca.com
+                %th Profile
+                %th Active
+                %th
+                  Membership
+                  %br
+                  Added
+                %th
+                  Reset
+                  %br
+                  Password
+              = render @members
