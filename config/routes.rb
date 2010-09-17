@@ -10,7 +10,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
   # Application resource routes
-  map.resources :members
+  map.resources :members do |m|
+    m.resource :profile
+  end
 
   # Named routes for the static site
   map.dealer '/dealer', :controller => "site", :action => "dealer"
