@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100917183919) do
+ActiveRecord::Schema.define(:version => 20100921005544) do
+
+  create_table "expertises", :force => true do |t|
+    t.integer "member_id"
+    t.integer "years"
+    t.string  "description"
+    t.boolean "yes_no"
+  end
 
   create_table "members", :force => true do |t|
     t.datetime "created_at"
@@ -32,6 +39,8 @@ ActiveRecord::Schema.define(:version => 20100917183919) do
     t.boolean  "sample"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "url"
+    t.integer  "member_id"
   end
 
   create_table "users", :force => true do |t|
