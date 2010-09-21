@@ -6,21 +6,21 @@
       #sidebar
         %ul#cust.nav
           %li
-            %a#two{:href => "javascript:Bio();"} > <%=plIIF(bvPrint, "Edit Biography", "View/Print Biography")%>
+            %a#two{:href => "javascript:Bio();"}= params[:print] ? "> Edit Biography" : "> View/Print Biography"
           %li
             %a#four{:href => "javascript:toggle('four','foursub');"} > Links
             %ul#foursub.sub
               %li
-                %a{:href => "mailto:<%=svEmail%>"} Contact Me
+                %a{:href => "mailto:#{@member.email}"} Contact Me
               %li
-                %a{:href => "<%=svURL%>", :target => "_new"} Consultant Web Site
+                %a{:href => @member.profile.url, :target => "_new"} Consultant Web Site
           %li
             %a#six{:href => "javascript:Upload();"} > Attachments
           %li
             %a#five{:href => "javascript:toggle('five','fivesub');"} > Member Directory
             %ul#fivesub.sub
               %li
-                %a{:href => "member_list.asp"} All Members
+                %a{:href => members_path} All Members
       %br
       %div{:align => "center"}
         %img{:border => "0", :src => "<%=svImage%>"}
