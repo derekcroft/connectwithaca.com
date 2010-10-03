@@ -70,6 +70,10 @@
                       %tr
                         %th Project Name
                         %th Show on Profile
+                      - p.fields_for :projects do |p|
+                        %tr
+                          %td= p.text_field :name
+                          %td= p.check_box :show_on_profile
                 %tr
                   %td#profile_red
                   %td
