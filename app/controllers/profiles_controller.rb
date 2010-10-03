@@ -10,6 +10,11 @@ class ProfilesController < ApplicationController
     render "member"
   end
 
+  def update
+    @profile.update_attributes(params[:profile]) ?
+      redirect_to(member_profile_path(@member)) : render(:action => :edit)
+  end
+
   protected
   def load_member
     @member = Member.find(params[:member_id]) if params[:member_id]
