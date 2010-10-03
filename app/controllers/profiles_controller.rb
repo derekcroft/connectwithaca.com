@@ -3,9 +3,11 @@ class ProfilesController < ApplicationController
   before_filter :load_profile
 
   def show
+    render "member"
   end
 
   def edit
+    render "member"
   end
 
   protected

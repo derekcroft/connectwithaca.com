@@ -3,7 +3,6 @@ class Member < ActiveRecord::Base
 
   belongs_to :user
   has_one :profile, :dependent => :destroy
-  has_many :expertises, :dependent => :destroy
 
   public
   def full_name
