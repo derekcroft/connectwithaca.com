@@ -7,8 +7,7 @@
     %ul#twosub.sub
       - if logged_in?
         %li
-          %a{ :href => "profile.asp" }
-            Edit My Profile
+          = link_to "Edit My Profile", member_profile_path(current_user.member)
       %li
         %a{ :href => "http://www.connectwithaca.com/shopsite_sc/page1.html" }
           Annual Membership (PayPal)
