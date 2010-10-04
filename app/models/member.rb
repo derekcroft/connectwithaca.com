@@ -1,7 +1,8 @@
 class Member < ActiveRecord::Base
-  belongs_to :user, :dependent => :destroy
+  before_create :generate_profile
+
+  belongs_to :user
   has_one :profile, :dependent => :destroy
-  has_many :expertises, :dependent => :destroy
 
   public
   def full_name
@@ -10,5 +11,10 @@ class Member < ActiveRecord::Base
 
   def name
     "#{self.last_name}, #{self.first_name}"
+  end
+
+  protected
+  def generate_profile
+    self.create_profile unless self.profile
   end
 end
