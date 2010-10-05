@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101003221043) do
+ActiveRecord::Schema.define(:version => 20101004230545) do
 
   create_table "expertises", :force => true do |t|
     t.integer "years"
@@ -29,6 +29,16 @@ ActiveRecord::Schema.define(:version => 20101003221043) do
     t.string   "address"
     t.integer  "user_id"
     t.boolean  "active",         :default => true
+    t.string   "personal_email"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "home_phone"
+    t.string   "business_phone"
+    t.string   "mobile_phone"
+    t.string   "url"
+    t.text     "internal_note"
   end
 
   create_table "profiles", :force => true do |t|
@@ -61,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20101003221043) do
     t.datetime "updated_at"
     t.string   "remember_token",            :limit => 40
     t.datetime "remember_token_expires_at"
+    t.boolean  "admin",                                    :default => false
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true

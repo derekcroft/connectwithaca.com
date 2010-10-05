@@ -4,6 +4,8 @@ class Member < ActiveRecord::Base
   belongs_to :user
   has_one :profile, :dependent => :destroy
 
+  validates_presence_of :first_name, :last_name, :email
+
   public
   def full_name
     "#{self.first_name} #{self.last_name}"

@@ -1,0 +1,62 @@
+- form_for @member do |m|
+  #member_img
+    #pg_title Member Center
+  %table#pg_container{:cellpadding => "0", :cellspacing => "0"}
+    %tr
+      %td#menu_area
+        #sidebar
+          %ul#cust.nav
+            = render "site/member_center_sidebar"
+      %td{:valign => "top"}
+        %table#content_table{:cellpadding => "0", :cellspacing => "0"}
+          %tr
+            %td#content_top
+              Member List
+          %tr
+            %td#content_main{:style => "background-repeat:no-repeat;background-position:right bottom;"}
+              %table{:border => "0", :width => "95%", :align => "center"}
+                %span{:style => "color: #c60a27; font-size: larger; font-weight: bold;"}= flash[:error]
+                - @member.try(:errors).try(:each) do |attr, msg|
+                  %tr
+                    %td{:align => "left", :colspan => 4, :style => "color: #c60a27;"} #{attr.capitalize} #{msg}
+                %tr
+                  %td{:align => "right"} Personal Email:&nbsp;
+                  %td{:align => "left"}= m.text_field :personal_email, :size => 20, :maxlength => 50
+                  %td{:align => "right"} Active:&nbsp;
+                  %td{:align => "left"}= m.check_box :active
+                %tr
+                  %td{:align => "right"} Last Name:&nbsp;
+                  %td{:align => "left"}= m.text_field :last_name, :size => 20, :maxlength => 50
+                  %td{:align => "right"} First Name:&nbsp;
+                  %td{:align => "left"}= m.text_field :first_name, :size => 20, :maxlength => 50
+                %tr
+                  %td{:align => "right"} Address:&nbsp;
+                  %td{:align => "left"}= m.text_field :address, :size => 20, :maxlength => 255
+                  %td{:align => "right"} Address 2:&nbsp;
+                  %td{:align => "left"}= m.text_field :address2, :size => 20, :maxlength => 255 
+                %tr
+                  %td{:align => "right"} City:&nbsp;
+                  %td{:align => "left"}= m.text_field :city, :size => 20, :maxlength => 255
+                  %td{:align => "right"} State:&nbsp;
+                  %td{:align => "left"}= m.text_field :state, :size => 5, :maxlength => 2 
+                %tr
+                  %td{:align => "right"} Zip:&nbsp;
+                  %td{:align => "left"}= m.text_field :zip, :size => 10, :maxlength => 25
+                  %td{:align => "right"} Home Phone:&nbsp;
+                  %td{:align => "left"}= m.text_field :home_phone, :size => 10, :maxlength => 25
+                %tr
+                  %td{:align => "right"} Business Phone:&nbsp;
+                  %td{:align => "left"}= m.text_field :business_phone, :size => 10, :maxlength => 25
+                  %td{:align => "right"} Mobile Phone:&nbsp;
+                  %td{:align => "left"}= m.text_field :mobile_phone, :size => 10, :maxlength => 25
+                %tr
+                  %td{:align => "right"} Web Site:&nbsp;
+                  %td{:align => "left", :colspan => 3}= m.text_field :url, :size => 50, :maxlength => 255
+                %tr
+                  %td{:align => "right"} ACA Email Address:&nbsp;
+                  %td{:align => "left"}= m.text_field :email, :size => 20, :maxlength => 255
+                %tr{:valign => "top"}
+                  %td{:align => "right"} Internal Note:&nbsp;
+                  %td{:align => "left", :colspan => 3}= m.text_area :internal_note, :width => 45, :rows => 5
+                %tr
+                  %td{:colspan => 4, :align => "center"}= image_submit_tag "button.jpg"
