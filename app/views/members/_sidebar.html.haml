@@ -1,0 +1,21 @@
+#sidebar
+  %ul#cust.nav
+    %li
+      %a#two{:href => "javascript:Bio();"} > View/Print Biography 
+    %li
+      %a#four{:href => "javascript:toggle('four','foursub');"} > Links
+      %ul#foursub.sub
+        %li
+          %a{:href => "mailto:#{@member.email}"} Contact Me
+        %li
+          = link_to "Consultant Web Site", @member.profile.try(:url), :target => "_new"
+    %li
+      %a#six{:href => "javascript:Upload();"} > Attachments
+    %li
+      %a#five{:href => "javascript:toggle('five','fivesub');"} > Member Directory
+      %ul#fivesub.sub
+        %li
+          = link_to "All Members", members_path
+%br
+%div{:align => "center"}
+  -#%img{:border => "0", :src => "<%=svImage%>"}
