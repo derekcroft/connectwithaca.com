@@ -4,7 +4,7 @@ class Member < ActiveRecord::Base
   belongs_to :user
   has_one :profile, :dependent => :destroy
 
-  validates_presence_of :first_name, :last_name, :email
+  validates_presence_of :first_name, :last_name
 
   public
   def full_name
@@ -13,6 +13,10 @@ class Member < ActiveRecord::Base
 
   def name
     "#{self.last_name}, #{self.first_name}"
+  end
+
+  def aca_email
+    self.email.try(:gsub, /@connectwithaca.com/, '')
   end
 
   protected
