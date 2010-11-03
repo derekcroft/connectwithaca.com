@@ -37,11 +37,11 @@
                       %th Expertise
                       %th Yes/No
                       %th # of Years
-                    - @member.expertises.each do |e|
+                    - Expertise.all.each do |e|
                       %tr
-                        %td= e.description
-                        %td= check_box_tag "member[expertise][#{e[:id]}", "1", e.yes_no 
-                        %td= e.years 
+                        %td= e.name
+                        %td= check_box_tag "member[expertise][#{e[:id]}", "1", true 
+                        %td 5
               %tr{:valign => "top"}
                 %td#profile_red Latest Projects:
                 %td

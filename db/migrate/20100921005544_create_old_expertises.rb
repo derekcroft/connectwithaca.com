@@ -1,4 +1,4 @@
-class CreateExpertises < ActiveRecord::Migration
+class CreateOldExpertises < ActiveRecord::Migration
   def self.up
     create_table :expertises, :force => true do |e|
       e.integer :member_id, :years

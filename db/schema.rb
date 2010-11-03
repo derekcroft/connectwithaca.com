@@ -9,13 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101004230545) do
+ActiveRecord::Schema.define(:version => 20101103220432) do
 
   create_table "expertises", :force => true do |t|
-    t.integer "years"
-    t.string  "description"
-    t.boolean "yes_no"
-    t.integer "profile_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "members", :force => true do |t|
