@@ -9,10 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101103220432) do
+ActiveRecord::Schema.define(:version => 20101103222838) do
 
   create_table "expertises", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "member_expertises", :force => true do |t|
+    t.integer  "member_id"
+    t.integer  "expertise_id"
+    t.integer  "years"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,6 +46,14 @@ ActiveRecord::Schema.define(:version => 20101103220432) do
     t.string   "mobile_phone"
     t.string   "url"
     t.text     "internal_note"
+  end
+
+  create_table "profile_expertises", :force => true do |t|
+    t.integer  "profile_id"
+    t.integer  "expertise_id"
+    t.integer  "years"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "profiles", :force => true do |t|

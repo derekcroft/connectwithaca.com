@@ -61,8 +61,8 @@
                       - Expertise.all.each do |e|
                         %tr
                           %td= e.name
-                          %td= check_box_tag "member[expertise][#{e[:id]}", "1", true 
-                          %td= text_field_tag "member[expertise][#{e[:id]}", "1"
+                          %td= check_box_tag "profile[expertise][#{e[:id]}", "1", @member.profile.has_expertise?(e)
+                          %td= text_field_tag "profile[expertise][#{e[:id]}", "1"
                 %tr{:valign => "top"}
                   %td#profile_red Latest Projects:
                   %td
