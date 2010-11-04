@@ -1,4 +1,4 @@
-- form_for [@member, @member.profile] do |p|
+- form_for @profile do |p|
   #member_img
     #pg_title Member Profiles
   %table#pg_container{:cellpadding => "0", :cellspacing => "0"}
@@ -61,8 +61,8 @@
                       - Expertise.all.each do |e|
                         %tr
                           %td= e.name
-                          %td= check_box_tag "profile[expertise][#{e[:id]}", "1", @member.profile.has_expertise?(e)
-                          %td= text_field_tag "profile[expertise][#{e[:id]}", "1"
+                          %td= check_box_tag "expertise[#{e[:id]}][has]", "1", @member.profile.has_expertise?(e)
+                          %td= text_field_tag "expertise[#{e[:id]}][years]", "1"
                 %tr{:valign => "top"}
                   %td#profile_red Latest Projects:
                   %td

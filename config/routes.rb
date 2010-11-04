@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :expertises
+  map.resources :profiles
 
   # restful_authentication routes
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
