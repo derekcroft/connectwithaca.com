@@ -19,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Named routes for the static site
   map.dealer '/dealer', :controller => "site", :action => "dealer"
+  map.current_opportunities '/current_opportunities', :controller => "site", :action => "current_opportunities"
   map.recruiting '/recruiting', :controller => "site", :action => "recruiting"
   map.join '/join', :controller => "site", :action => "join"
   map.member_center '/member_center', :controller => "site", :action => "member_center"

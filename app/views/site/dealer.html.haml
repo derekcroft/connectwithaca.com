@@ -11,9 +11,11 @@
               > Submit Opportunity
             %ul#foursub.sub
           %li
+            = link_to "> Current Opportunities", current_opportunities_path, :id => "five"
+          %li
             %a#five{ :href => "javascript:toggle('five','fivesub');" }
               > Content Library
-            %ul#fivesub.sub
+            %ul#sixsub.sub
     %td{ :valign => "top" }
       %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
         %tr
