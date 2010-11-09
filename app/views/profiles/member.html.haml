@@ -74,6 +74,23 @@
                         %tr
                           %td= p.text_field :name
                           %td= p.check_box :show_on_profile
+                %tr{:valign => "top"}
+                  %td#profile_red Other Relevant Expertise:
+                  %td= p.text_field :other_expertise
+                %tr{:valign => "top"}
+                  %td#profile_red{:rowspan => 3} Dealer System Training:
+                  %td= p.text_field :dealer_system1
+                %tr{:valign => "top"}
+                  %td= p.text_field :dealer_system2
+                %tr{:valign => "top"}
+                  %td= p.text_field :dealer_system3
+                %tr{:valign => "top"}
+                  %td#profile_red{:rowspan => 3} Languages:
+                  %td= p.text_field :language1
+                %tr
+                  %td= p.text_field :language2
+                %tr
+                  %td= p.text_field :language3
                 %tr
                   %td#profile_red
                   %td
