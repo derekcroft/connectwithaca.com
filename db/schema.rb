@@ -17,14 +17,6 @@ ActiveRecord::Schema.define(:version => 20101109013853) do
     t.datetime "updated_at"
   end
 
-  create_table "member_expertises", :force => true do |t|
-    t.integer  "member_id"
-    t.integer  "expertise_id"
-    t.integer  "years"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "members", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
