@@ -2,3 +2,4 @@
 *.log
 /config/initializers/site_keys.rb
 /db/*.sqlite3
+.idea
