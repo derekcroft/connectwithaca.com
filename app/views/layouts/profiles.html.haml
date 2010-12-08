@@ -1,4 +1,20 @@
 = content_for :content do
-  = yield
+  #member_img
+    #pg_title Member Profiles
+  %table#pg_container{:cellpadding => "0", :cellspacing => "0"}
+    %tr
+      %td#menu_area
+        = render :partial => "menu_area"
+      %td#content_area{:valign => "top"}
+        %table#content_table{:cellpadding => "0", :cellspacing => "0"}
+          %tr
+            %td#profile_top{:style => "background-image:url(<%=svImage_Small%>);background-repeat:no-repeat;height=50px;"}
+              = render :partial => "profile_top"
+          %tr
+            %td.content_main#profile_bio
+              = render :partial => "profile_bio"
+          %tr
+            %td.content_main#profile_details{:style => "text-align:left;"}
+              = yield
 
 = render :file => "layouts/application"
