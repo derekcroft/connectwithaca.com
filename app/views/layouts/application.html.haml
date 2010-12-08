@@ -15,7 +15,7 @@
             = render :partial => "layouts/header"
         %tr
           %td#content
-            = yield
+            = yield(:content) or yield
         %tr
           %td#bottom-footer
             = render :partial => "layouts/footer"
