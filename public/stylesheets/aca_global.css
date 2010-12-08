@@ -179,10 +179,10 @@ table#content_table {
 	padding:0px 0px 0px 0px;
 	border:solid 1px #000000;
 	z-index:300;
-	
+
 }
-	
-#content_main {
+
+.content_main {
 	vertical-align:top;
 	margin:0px 0px 0px 0px;
 	padding:20px 20px 0px 20px;
@@ -389,7 +389,7 @@ table#home_table {
 	height:16px;
 	border:solid 0px #000000;
 	}
-	
+
 #pg_container {
 	width:798px;
 	height:300px;
@@ -409,7 +409,7 @@ table#home_table {
 /* :::::::::::::  VERTICAL LEFT SIDE MENU :::::::::::::::::::: */
 ul {
 	margin: 0px;
-	padding: 0px;	
+	padding: 0px;
 	}
 ul.nav {
 	position:relative;
@@ -486,7 +486,7 @@ ul.sub li a:hover {
 	text-decoration:underline;
 }
 
-	
+
 /* :::::::::::::::::  MEMBER PROFILE PAGE STYLES :::::::::::::::::::: */
 
 #profile_top {
@@ -517,7 +517,7 @@ ul.sub li a:hover {
 	padding:0px 0px 0px 0px;
 	border:solid 0px #000000;
 	}
-	
+
 #profile {
 	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
 	font-size: 1.0em;
@@ -530,7 +530,7 @@ ul.sub li a:hover {
 	padding:0px 0px 0px 0px;
 	border:solid 0px #000000;
 	}
-	
+
 #profile_red {
 	width:300px;
 	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
@@ -544,7 +544,7 @@ ul.sub li a:hover {
 	padding:0px 0px 0px 0px;
 	border:solid 0px #000000;
 	}
-	
+
 #m_form {
 	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
 	font-size: 1.0em;
@@ -570,9 +570,9 @@ ul.sub li a:hover {
 	padding:5px 5px 5px 0px;
 	border:solid 0px #000000;
 	}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+

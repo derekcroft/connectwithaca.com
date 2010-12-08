@@ -1,0 +1,3 @@
+#profile_top_text
+  = "#{@member.first_name} #{@member.last_name}"
+  %span{:style => "font-size:0.6em;"}= @member.profile.try(:title)
