@@ -2,16 +2,16 @@
   %table#profile{:cellpadding => "0", :cellspacing => "0"}
     %tr
       %td#profile_red Sample:
-      %td= p.check_box :sample
+      %td#profile_value= :sample ? "Yes" : "No"
     %tr
       %td#profile_red Title:
-      %td= p.text_field :title, :size => 25, :maxlength => 255
+      %td#profile_value= @profile.try(:title)
     %tr{:valign => "top"}
       %td#profile_red Biography:
-      %td= p.text_area :biography, :rows => 8, :cols => 50
+      %td#profile_value= @profile.try(:biography)
     %tr
       %td#profile_red Location:
-      %td= p.text_field :location
+      %td#profile_value= @profile.try(:location)
     %tr{:valign => "top"}
       %td#profile_red Expertise:
       %td
@@ -38,21 +38,21 @@
               %td= p.check_box :show_on_profile
     %tr{:valign => "top"}
       %td#profile_red Other Relevant Expertise:
-      %td= p.text_field :other_expertise
+      %td#profile_value= @profile.try(:other_expertise)
     %tr{:valign => "top"}
       %td#profile_red{:rowspan => 3} Dealer System Training:
-      %td= p.text_field :dealer_system1
+      %td#profile_value= @profile.try(:dealer_system1)
     %tr{:valign => "top"}
-      %td= p.text_field :dealer_system2
+      %td#profile_value= @profile.try(:dealer_system2)
     %tr{:valign => "top"}
-      %td= p.text_field :dealer_system3
+      %td#profile_value= @profile.try(:dealer_system3)
     %tr{:valign => "top"}
       %td#profile_red{:rowspan => 3} Languages:
-      %td= p.text_field :language1
+      %td#profile_value= @profile.try(:language1)
     %tr
-      %td= p.text_field :language2
+      %td#profile_value= @profile.try(:language2)
     %tr
-      %td= p.text_field :language3
+      %td#profile_value= @profile.try(:language3)
     %tr
       %td#profile_red
       %td
