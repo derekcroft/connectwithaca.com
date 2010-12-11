@@ -8,8 +8,7 @@ class ProfilesController < ApplicationController
   end
 
   def update
-    expertise_ids = params[:expertise].select { |k,v| v.has_key?(:has) }.collect { |e| e.first.to_i }
-    @profile.expertise_ids = expertise_ids
+    params[:profile][:expertise_ids] ||= []
     if @profile.update_attributes(params[:profile])
       redirect_to member_profile_path(@member)
     else
