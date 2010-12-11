@@ -7,7 +7,7 @@
     %ul#twosub.sub
       - if logged_in?
         %li
-          = link_to "Edit My Profile", member_profile_path(current_user.member)
+          = link_to "Edit My Profile", edit_member_profile_path(current_user.member)
   - if logged_in?
     %li
       %a#three{ :href => "javascript:toggle('three','threesub');" }
