@@ -10,6 +10,7 @@ class ProfilesController < ApplicationController
   def update
     params[:profile][:expertise_ids] ||= []
     if @profile.update_attributes(params[:profile])
+      params[:expertise_years].each {|k,v| @profile.set_years_of_expertise Expertise.find(k), v}
       redirect_to member_profile_path(@member)
     else
       render :action => :edit
