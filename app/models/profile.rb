@@ -5,7 +5,7 @@ class Profile < ActiveRecord::Base
   accepts_nested_attributes_for :projects, :allow_destroy => true
 
   has_many :profile_expertises
-  has_many :expertises, :through => :profile_expertises
+  has_many :expertises, :through => :profile_expertises, :order => "expertise_id ASC"
 
   def has_expertise?(expertise)
     self.expertises.exists?(expertise)
