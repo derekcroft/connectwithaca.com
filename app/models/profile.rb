@@ -2,7 +2,7 @@ class Profile < ActiveRecord::Base
   belongs_to :member
 
   has_many :projects, :dependent => :destroy
-  accepts_nested_attributes_for :projects, :allow_destroy => true
+  accepts_nested_attributes_for :projects, :allow_destroy => true, :reject_if => proc { |attributes| attributes['name'].blank? }
 
   has_many :profile_expertises
   has_many :expertises, :through => :profile_expertises, :order => "expertise_id ASC"

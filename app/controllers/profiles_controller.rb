@@ -5,6 +5,7 @@ class ProfilesController < ApplicationController
   end
 
   def edit
+    @profile.projects.build if @profile.projects.count < 3
   end
 
   def update
