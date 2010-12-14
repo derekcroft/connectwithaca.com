@@ -30,10 +30,10 @@
           %tr
             %th Project Name
             %th Show on Profile
-          - p.fields_for :projects do |p|
+          - p.fields_for :projects do |prj|
             %tr
-              %td= p.text_field :name
-              %td= p.check_box :show_on_profile
+              %td= prj.text_field :name
+              %td= prj.check_box :show_on_profile
     %tr{:valign => "top"}
       %td#profile_red Other Relevant Expertise:
       %td#profile_value= @profile.try(:other_expertise)
