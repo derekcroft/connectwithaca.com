@@ -5,7 +5,7 @@ class ProfilesController < ApplicationController
   end
 
   def edit
-    @profile.projects.build if @profile.projects.count < 3
+    (5 - @profile.projects.count).times {@profile.projects.build}
   end
 
   def update
