@@ -1,57 +1,52 @@
-- form_for @profile do |p|
-  %table#profile{:cellpadding => "0", :cellspacing => "0"}
-    %tr
-      %td#profile_red Sample:
-      %td#profile_value= :sample ? "Yes" : "No"
-    %tr
-      %td#profile_red Title:
-      %td#profile_value= @profile.try(:title)
-    %tr{:valign => "top"}
-      %td#profile_red Biography:
-      %td#profile_value= @profile.try(:biography)
-    %tr
-      %td#profile_red Location:
-      %td#profile_value= @profile.try(:location)
-    %tr{:valign => "top"}
-      %td#profile_red Expertise:
-      %td
-        %table#profile{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+%table#profile{:cellpadding => "0", :cellspacing => "0"}
+  %tr
+    %td#profile_red Sample:
+    %td#profile_value= :sample ? "Yes" : "No"
+  %tr
+    %td#profile_red Title:
+    %td#profile_value= @profile.try(:title)
+  %tr{:valign => "top"}
+    %td#profile_red Biography:
+    %td#profile_value= @profile.try(:biography)
+  %tr
+    %td#profile_red Location:
+    %td#profile_value= @profile.try(:location)
+  %tr{:valign => "top"}
+    %td#profile_red Expertise:
+    %td
+      %table#profile{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+        %tr
+          %th Expertise
+          %th # of Years
+        - @profile.expertises.each do |e|
           %tr
-            %th Expertise
-            %th # of Years
-          - @profile.expertises.each do |e|
-            %tr
-              %td= e.name
-              %td#profile= @profile.profile_expertises.find_by_expertise_id(e.id).try(:years)
-    %tr{:valign => "top"}
-      %td#profile_red Latest Projects:
-      %td
-        %table#profile{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+            %td= e.name
+            %td#profile= @profile.profile_expertises.find_by_expertise_id(e.id).try(:years)
+  %tr{:valign => "top"}
+    %td#profile_red Latest Projects:
+    %td
+      %table#profile{:cellpadding => "0", :cellspacing => "0", :width => "100%"}
+        - @profile.viewable_projects.each do |p|
           %tr
-            %th Project Name
-            %th Show on Profile
-          - p.fields_for :projects do |prj|
-            %tr
-              %td= prj.text_field :name
-              %td= prj.check_box :show_on_profile
-    %tr{:valign => "top"}
-      %td#profile_red Other Relevant Expertise:
-      %td#profile_value= @profile.try(:other_expertise)
-    %tr{:valign => "top"}
-      %td#profile_red{:rowspan => 3} Dealer System Training:
-      %td#profile_value= @profile.try(:dealer_system1)
-    %tr{:valign => "top"}
-      %td#profile_value= @profile.try(:dealer_system2)
-    %tr{:valign => "top"}
-      %td#profile_value= @profile.try(:dealer_system3)
-    %tr{:valign => "top"}
-      %td#profile_red{:rowspan => 3} Languages:
-      %td#profile_value= @profile.try(:language1)
-    %tr
-      %td#profile_value= @profile.try(:language2)
-    %tr
-      %td#profile_value= @profile.try(:language3)
-    %tr
-      %td#profile_red
-      %td
-        = image_submit_tag "button.jpg"
+            %td= p.name
+  %tr{:valign => "top"}
+    %td#profile_red Other Relevant Expertise:
+    %td#profile_value= @profile.try(:other_expertise)
+  %tr{:valign => "top"}
+    %td#profile_red{:rowspan => 3} Dealer System Training:
+    %td#profile_value= @profile.try(:dealer_system1)
+  %tr{:valign => "top"}
+    %td#profile_value= @profile.try(:dealer_system2)
+  %tr{:valign => "top"}
+    %td#profile_value= @profile.try(:dealer_system3)
+  %tr{:valign => "top"}
+    %td#profile_red{:rowspan => 3} Languages:
+    %td#profile_value= @profile.try(:language1)
+  %tr
+    %td#profile_value= @profile.try(:language2)
+  %tr
+    %td#profile_value= @profile.try(:language3)
+  %tr
+    %td#profile_red
+    %td
+      = image_submit_tag "button.jpg"

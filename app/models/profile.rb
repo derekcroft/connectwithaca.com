@@ -19,4 +19,8 @@ class Profile < ActiveRecord::Base
     pe = self.profile_expertises.detect { |v| v.expertise_id == expertise.id }
     pe.try(:years=, years) && pe.save
   end
+
+  def viewable_projects
+    self.projects.select {|project| project.show_on_profile && !project.name.blank?}
+  end
 end
