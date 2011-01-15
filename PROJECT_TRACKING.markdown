@@ -5,9 +5,7 @@ To-Do List
 --------------------------------------
 In planned-implementation order
 
-+   Edit Profile: Add support for entering projects
-
-+   Profile: Track down the missing image which is logging errors
++   Add support for attachment uploads.
 
 +   Edit Profile: Clean up my implementation of Expertise editing.
 
