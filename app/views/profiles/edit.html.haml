@@ -1,4 +1,4 @@
-- form_for @profile do |p|
+- form_for @profile, :html => {:multipart => true} do |p|
   %table#profile{:cellpadding => "0", :cellspacing => "0"}
     %tr
       %td#profile_red Sample:
@@ -9,6 +9,9 @@
     %tr{:valign => "top"}
       %td#profile_red Biography:
       %td= p.text_area :biography, :rows => 8, :cols => 50
+    %tr
+      %td#profile_red Photograph:
+      %td= p.file_field :photo
     %tr
       %td#profile_red Location:
       %td= p.text_field :location

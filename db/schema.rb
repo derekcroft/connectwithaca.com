@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101109013853) do
+ActiveRecord::Schema.define(:version => 20110115192013) do
 
   create_table "expertises", :force => true do |t|
     t.string   "name"
@@ -65,6 +65,20 @@ ActiveRecord::Schema.define(:version => 20101109013853) do
     t.string   "language1"
     t.string   "language2"
     t.string   "language3"
+    t.string   "project1_name"
+    t.boolean  "project1_show"
+    t.string   "project2_name"
+    t.boolean  "project2_show"
+    t.string   "project3_name"
+    t.boolean  "project3_show"
+    t.string   "project4_name"
+    t.boolean  "project4_show"
+    t.string   "project5_name"
+    t.boolean  "project5_show"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "projects", :force => true do |t|

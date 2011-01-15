@@ -7,6 +7,8 @@ class Profile < ActiveRecord::Base
   has_many :profile_expertises
   has_many :expertises, :through => :profile_expertises, :order => "expertise_id ASC"
 
+  has_attached_file :photo, :styles => { :medium => "150x180>", :small => "42x50>" }
+
   def has_expertise?(expertise)
     self.expertises.exists?(expertise)
   end
