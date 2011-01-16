@@ -41,6 +41,12 @@ What's Still Broken
 +   When a profile already has a photo, the upload button appears without showing it. There's no indicator right by the button that a photo
     is already present.
 
++   Profile Page: the "View/Print Biography" and "Upload" sidebar items don't do anything.
+
++   Profile Page: The "Consultant Web Site" link goes to the member's Edit Profile page, not to an external web site as one would expect.
+
++   Sample Profiles do not appear under the Sample Profiles sidebar item when it is expanded.
+
 +   The old "recruiting_form.asp" page has not be ported to Rails, so links to it are broken. It is linked from the Recruiting page sidebar.
 
 +   The old "application.asp" page has not be ported to Rails, so links to it are broken. It is linked from the "Join ACA" page and its sidebar.
