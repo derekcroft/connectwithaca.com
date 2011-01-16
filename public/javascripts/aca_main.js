@@ -6,11 +6,9 @@ function toggle(tab,which) {
 		var b = document.getElementById(tab);
 		if (a.style.display != "block") {
 			a.style.display = "block";
-			b.style.backgroundImage = "url(images/less_arrow.gif)";
 		}
 		else {
 			a.style.display = "none";
-			b.style.backgroundImage = "url(images/more_arrow.gif)";
 		}
 	}
 }
