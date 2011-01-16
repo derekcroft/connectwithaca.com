@@ -2,14 +2,3 @@
 = javascript_include_tag "plexus"
 = javascript_include_tag "pickers"
 = javascript_include_tag "dredd"
-:javascript
-  function SubmitForm(){
-    if(Validate_Form_No_Submit()){
-      document.thisForm.action = "member_find.asp";
-      document.thisForm.submit();
-    }
-  }
-  function Init(){
-    document.thisForm.ACA_ID_RQD.select();
-    document.thisForm.ACA_ID_RQD.focus();
-  }  

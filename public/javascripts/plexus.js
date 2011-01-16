@@ -1139,8 +1139,8 @@ function Function_Keypress(vKeyNo) {
 
 
 // Load the required Javascript files for popup menus
-document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='" + vBaseAddress + "/Popup_Menus/Global_Menu_Properties.js' TYPE='text/javascript'><\/SCR" + "IPT>");
-document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='" + vBaseAddress + "/Popup_Menus/HM_Loader.js' TYPE='text/javascript'><\/SCR" + "IPT>");
+//document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='" + vBaseAddress + "/Popup_Menus/Global_Menu_Properties.js' TYPE='text/javascript'><\/SCR" + "IPT>");
+//document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='" + vBaseAddress + "/Popup_Menus/HM_Loader.js' TYPE='text/javascript'><\/SCR" + "IPT>");
 
 
 function SelectReset( vSelectObj ) { //Resets a Select Object to the Default Select, TSCH 8/27/01
