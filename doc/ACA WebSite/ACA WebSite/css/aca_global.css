@@ -1,0 +1,578 @@
+body {
+  background-color: #FFFFFF;
+  font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000000;
+	text-align:center;
+  }
+
+/* :::::::::::::::::  MAIN TABLE :: This is the very outside of the site  ::::::::::::::::*/
+table#container {
+	position:relative;
+	top:25px;
+	width:800px;
+	margin:0px;
+	padding:0px;
+	border: solid 0px #0000FF;
+	}
+#top {
+	width:800px;
+	height:20px;
+	background-image: url(../images/top_line.jpg);
+  	background-position: top;
+  	background-repeat: no-repeat;
+	border-top: solid 0px #8F8F8F;
+	border-bottom: solid 0px #FF0000;
+	}
+/* :::::::::::::::::  HEADER :: Logo & main navigation area  ::::::::::::::::*/
+#header {
+	height:100px;
+	margin:0px;
+	padding:0px;
+	border-left: solid 1px #8F8F8F;
+	border-right: solid 1px #8F8F8F;
+	border-top: solid 0px #8F8F8F;
+	border-bottom: solid 0px #8F8F8F;
+	}
+#logo {
+	float:left;
+	position:relative;
+	top:0px;
+	left:25px;
+	width:250px;
+	height:90px;
+	border:solid 0px #000000;
+	background-image: url(../images/ACAlogo.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+	}
+/* :::::::::::::::::  CONTENT AREA :: This styles the main page content area  ::::::::::::::::*/
+#content {
+	position:relative;
+	top:0px;
+	vertical-align:top;
+	height:350px;
+	border-left: solid 1px #8F8F8F;
+	border-right: solid 1px #8F8F8F;
+	border-top: solid 0px #8F8F8F;
+	border-bottom: solid 0px #8F8F8F;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	}
+/* :::::::::::::::::  FOOTER :: Copyright and footer nav if any  ::::::::::::::::*/
+#bottom-footer {
+	width:800px;
+	height:20px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 3px 0px;
+	background-image: url(../images/btm_line.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+	border-top: solid 1px #8F8F8F;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 8px;
+  font-weight: normal;
+	text-align:center;
+  color: #888888;
+	}
+* html body #bottom-footer {
+	height:20px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	}
+
+/* :::::::::::::::::  NAVIGATION :: This is the main navigation  ::::::::::::::::*/
+div#globalnav {
+	display:block;
+	float:right;
+	bottom:0px;
+	height:17px;
+	margin:78px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border: 0px solid #000000;
+}
+ul {
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.gnav {
+	display:block;
+	float:left;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border-top: solid 0px #FFFFFF;
+	border-right: solid 0px #A3A9B6;
+	border-bottom: solid 0px #AAAAAA;
+	border-left: solid 1px #D2D6E1;
+	list-style: none;
+}
+ul.gnav li {
+	display: block;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+ul.gnav li a {
+	display: block;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 0.9em;
+	font-weight:bold;
+	text-decoration : none;
+	text-align:center;
+	color: #8F8F8F;
+	margin-top: 1px;
+	margin-right: 10px;
+	margin-bottom: 1px;
+	margin-left: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+ul.gnav li a:hover {
+	display: block;
+	color:#c60a27;
+}
+* html body ul.gnav li a {
+	display: block;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: -16px;
+	margin-left: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+table#content_table {
+	width:100%;
+	height:100%;
+	border:solid 0px #FF0000;
+	}
+
+#content_top {
+	height:40px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	text-transform:uppercase;
+	letter-spacing:0.3em;
+	color: #7b7b7b;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 20px;
+	border-bottom:solid 1px #8F8F8F;
+	white-space:nowrap;
+	}
+
+#bug {
+	display:block;
+	float:right;
+	position:relative;
+	top:0px;
+	right:0px;
+	width:170px;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border:solid 1px #000000;
+	z-index:300;
+	
+}
+	
+#content_main {
+	vertical-align:top;
+	margin:0px 0px 0px 0px;
+	padding:20px 20px 0px 20px;
+	border:solid 0px #FF0000;
+	}
+
+h1 {
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	color: #c60a27;
+	margin:0px 0px 10px 0px;
+	padding:0px 0px 0px 0px;
+	border:solid 0px #FF0000;
+	}
+
+p {
+	display:block;
+  	position: relative;
+	float:left;
+	left:0px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	color: #000000;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 10px 0px;
+	border:solid 0px #000000;
+}
+
+ul {
+	display:block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: square;
+}
+ul.pg {
+	float: left;
+	display:block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	border: solid 0px #000000;
+}
+ul.pg li {
+	display:block;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight: normal;
+	color: #000000;
+	text-align: left;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: solid 0px #8F8F8F;
+	list-style: square;
+}
+
+
+
+
+
+/* ::::::::::::::::::::::::: PAGE STYLES :::::::::::::::::::::::::::::: */
+
+#home_img {
+	width:798px;
+	height:165px;
+	background-image: url(../images/home_img.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+	}
+#member_img {
+	width:798px;
+	height:65px;
+	background-image: url(../images/member_img.jpg);
+  	background-position: top;
+  	background-repeat: no-repeat;
+	}
+#member_images {
+	width:798px;
+	height:65px;
+	border-top:solid 0px #FFFFFF;
+	border-bottom:solid 0px #FFFFFF;
+	background-color:#FFFFFF;
+	background-image:url(../images/boxes.jpg);
+  background-position:middle center;
+  background-repeat:no-repeat;
+	}
+#member_btn a {
+	position:relative;
+	top:0px;
+	width:30px;
+	margin:0px 0px 0px 3px;
+	padding:0px 0px 0px 0px;
+	}
+* html body #member_btn a {
+	margin:1px 0px 0px 3px;
+	padding:0px 0px 0px 0px;
+	}
+#brand1 {
+	float:left;
+	position:relative;
+	top:20px;
+	left:24px;
+	width:275px;
+	font-family:'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 1.2em;
+  font-weight: normal;
+	text-align:left;
+	line-height:1.6em;
+  color: #FFFFFF;
+	}
+#brand2 {
+	float:right;
+	position:relative;
+	top:20px;
+	right:24px;
+	width:350px;
+	font-family:'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 1.6em;
+  font-weight: normal;
+	text-align:left;
+	line-height:1.6em;
+  color: #FFFFFF;
+	border:solid 0px #FFFFFF;
+	}
+#pg_title {
+	float:left;
+	position:relative;
+	top:16px;
+	left:24px;
+	width:350px;
+	font-family:'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 1.7em;
+  font-weight: normal;
+	text-align:left;
+	line-height:1.6em;
+  color: #FFFFFF;
+	}
+* html body #pg_title {
+	float:left;
+	position:relative;
+	top:14px;
+	}
+table#home_table {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:200px;
+	border-top:solid 1px #8F8F8F;
+	}
+#home_table td {
+	width:25%;
+	margin:0px 0px 0px 0px;
+	padding:20px;
+	border-right:solid 1px #8F8F8F;
+	vertical-align:top;
+	font-family:'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 1.0em;
+	line-height:1.3em;
+  font-weight: normal;
+	text-align:left;
+  color: #444444;
+	}
+#home_table td a {
+	font-family:'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 1.0em;
+	line-height:1.3em;
+  font-weight: normal;
+	text-align:left;
+	text-decoration:none;
+  color: #c60a27;
+	border:solid 0px #000000;
+	}
+#home_table td a:hover {
+	text-decoration:underline;
+	}
+.home_titles {
+	font-family:'Century Gothic', Verdana, Arial, Helvetica;
+  font-size: 1.0em;
+	line-height:1.3em;
+  font-weight: bold;
+	text-align:left;
+  color: #2e3cdb;
+	margin:0px 0px 5px 0px;
+	}
+#btn {
+	float:right;
+	position:relative;
+	bottom:0px;
+	right:0px;
+	width:16px;
+	height:16px;
+	border:solid 0px #000000;
+	}
+	
+#pg_container {
+	width:798px;
+	height:300px;
+	margin:0px;
+	padding:0px;
+	border:solid 0px #FF0000;
+	}
+
+#menu_area {
+	width:200px;
+	margin:0px;
+	padding:0px;
+	vertical-align:top;
+	border-right:solid 1px #8F8F8F;
+	}
+
+/* :::::::::::::  VERTICAL LEFT SIDE MENU :::::::::::::::::::: */
+ul {
+	margin: 0px;
+	padding: 0px;	
+	}
+ul.nav {
+	position:relative;
+	left: 0px;
+	top: 0px;
+	display:block;
+	width:200px;
+	text-align:left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: solid 0px #000000;
+	list-style-type:none;
+}
+ul.nav li {
+	display: block;
+	width: 200px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 0.9em;
+	font-weight:bold;
+	text-decoration : none;
+	color: #0000FF;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: solid 1px #8F8F8F;
+}
+ul.nav li a {
+	width:200px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	text-decoration : none;
+	color: #0000FF;
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 20px;
+	border:solid 0px #000000;
+}
+* html body ul.nav li a {
+	margin: 0px -20px 0px 0px;
+	padding: 10px 0px 10px 20px;
+}
+
+ul.sub {
+	display:none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+* html body ul.sub {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.sub li {
+	display: block;
+	background: none;
+	border: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.sub li a {
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	color: #7b7b7b;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 5px 30px;
+	border: none;
+}
+* html body ul.sub li a {
+	margin: 0px -32px 0px 0px;
+	padding: 0px 0px 5px 30px;
+}
+ul.sub li a:hover {
+	color: #8F8F8F;
+	text-decoration:underline;
+}
+
+	
+/* :::::::::::::::::  MEMBER PROFILE PAGE STYLES :::::::::::::::::::: */
+
+#profile_top {
+	position:relative;
+	top:0px;
+	display:block;
+	height:50px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.4em;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	vertical-align:center;
+	color: #7b7b7b;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border-bottom:solid 1px #8F8F8F;
+	white-space:nowrap;
+	}
+
+#profile_top_text {
+	margin:0px 0px 0px 60px;
+	padding:13px 0px 0px 0px;
+	border:solid 0px #000000;
+	}
+* html body #profile_top_text {
+	margin:0px 0px 0px 60px;
+	padding:0px 0px 0px 0px;
+	border:solid 0px #000000;
+	}
+	
+#profile {
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	vertical-align:center;
+	color: #000000;
+	margin:0px 0px 20px 0px;
+	padding:0px 0px 0px 0px;
+	border:solid 0px #000000;
+	}
+	
+#profile_red {
+	width:75px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:left;
+	vertical-align:center;
+	color: #c60a27;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border:solid 0px #000000;
+	}
+	
+#m_form {
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	vertical-align:center;
+	color: #000000;
+	margin:0px 0px 20px 0px;
+	padding:0px 0px 0px 0px;
+	border:solid 0px #000000;
+	}
+#form_titles {
+	width:165px;
+	font-family: 'Century Gothic', Verdana, Arial, Helvetica;
+	font-size: 1.0em;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	vertical-align:center;
+	color: #000000;
+	margin:0px 0px 0px 0px;
+	padding:5px 5px 5px 0px;
+	border:solid 0px #000000;
+	}
+	
+	
+	
+	
+	
+	

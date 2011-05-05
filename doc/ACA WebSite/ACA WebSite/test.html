@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4 Final//EN">
+<html><head>
+<title>Nested Boxes</title>
+<style type="text/css">
+
+#fatbox {width: 250px;
+         height: 150px;
+         border: 2px solid green;
+         margin: 10px;}
+
+#skinnybox {width: 150px;
+            height: 150px;
+            border: 2px solid green;
+            margin: 10px;}
+
+.innerbox { width: 200px;
+            height: 300px;
+            padding: 5px;
+            margin: 10px;
+            border: 2px solid red;}
+
+</style>
+</head>
+<body>
+
+<div id="fatbox">
+   <div class="innerbox">Here, the inner container fits within the outer.</div>
+</div>
+
+<div id="skinnybox">
+   <div class="innerbox">Here, the inner container doesn't fit within the outer.</div>
+</div>
+
+</body>
+</html>
