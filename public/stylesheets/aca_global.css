@@ -2,6 +2,10 @@ a img {
   border: none;
 }
 
+#content_main img {
+  padding-top: 1em;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Century Gothic', Verdana, Arial, Helvetica;
