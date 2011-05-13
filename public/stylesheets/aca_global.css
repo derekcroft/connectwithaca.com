@@ -1,3 +1,7 @@
+a img {
+  border: none;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Century Gothic', Verdana, Arial, Helvetica;
