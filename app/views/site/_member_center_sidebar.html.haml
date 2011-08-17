@@ -19,6 +19,5 @@
     %a#seven{ :href => "javascript:toggle('seven','sevensub');" }
       > Sample Profiles
     %ul#sevensub.sub
-      %li
-        %a{ :href => "member_find_profile.asp" }
-          First_Name Last_Name
+      - Profile.all(:conditions => { :sample => true }).each do |p|
+        %li= link_to p.member.full_name, member_profile_path(p.member)
