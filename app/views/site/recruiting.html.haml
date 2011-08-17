@@ -10,9 +10,7 @@
             %a#two{ :href => "javascript:toggle('two','twosub');" }
               > Complete Program Profile
             %ul#twosub.sub
-              %li
-                %a{ :href => "recruiting_form.asp" }
-                  Program Profile Form
+              %li= link_to "Program Profile Form", "#"
     %td{ :valign => "top" }
       %table#content_table{ :cellspacing => "0", :cellpadding => "0" }
         %tr
