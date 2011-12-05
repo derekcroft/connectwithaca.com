@@ -12,7 +12,6 @@ GEM
       activesupport (= 2.3.10)
     activesupport (2.3.10)
     diff-lcs (1.1.2)
-    fastercsv (1.5.3)
     haml (3.0.22)
     hpricot (0.8.2)
     paperclip (2.3.8)
@@ -41,7 +40,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastercsv
   haml
   hpricot
   paperclip (~> 2.3)
